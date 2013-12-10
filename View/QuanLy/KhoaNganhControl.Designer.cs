@@ -45,7 +45,6 @@
             this.buttonLamMoiNganh = new DevComponents.DotNetBar.ButtonX();
             this.buttonXoaNganh = new DevComponents.DotNetBar.ButtonX();
             this.buttonThemNganh = new DevComponents.DotNetBar.ButtonX();
-            this.metroToolbar2 = new DevComponents.DotNetBar.Metro.MetroToolbar();
             this.tabNganh = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.buttonLamMoiKhoa = new DevComponents.DotNetBar.ButtonX();
@@ -196,7 +195,6 @@
             this.superTabControlPanel2.Controls.Add(this.buttonLamMoiNganh);
             this.superTabControlPanel2.Controls.Add(this.buttonXoaNganh);
             this.superTabControlPanel2.Controls.Add(this.buttonThemNganh);
-            this.superTabControlPanel2.Controls.Add(this.metroToolbar2);
             this.superTabControlPanel2.Controls.Add(this.cbKhoa);
             this.superTabControlPanel2.Controls.Add(this.dgvNganh);
             this.superTabControlPanel2.Controls.Add(this.labelX2);
@@ -254,22 +252,6 @@
             this.buttonThemNganh.Symbol = "";
             this.buttonThemNganh.TabIndex = 23;
             this.buttonThemNganh.Click += new System.EventHandler(this.buttonThemNganh_Click_1);
-            // 
-            // metroToolbar2
-            // 
-            this.metroToolbar2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.metroToolbar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroToolbar2.ContainerControlProcessDialogKey = true;
-            this.metroToolbar2.ExpandDirection = DevComponents.DotNetBar.Metro.eExpandDirection.Top;
-            this.metroToolbar2.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroToolbar2.Location = new System.Drawing.Point(135, 302);
-            this.metroToolbar2.Name = "metroToolbar2";
-            this.metroToolbar2.Size = new System.Drawing.Size(289, 28);
-            this.metroToolbar2.TabIndex = 5;
-            this.metroToolbar2.Text = "metroToolbar2";
             // 
             // tabNganh
             // 
@@ -448,7 +430,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKhoa;
-        private DevComponents.DotNetBar.Metro.MetroToolbar metroToolbar2;
         private DevComponents.DotNetBar.ButtonX buttonLamMoiKhoa;
         private DevComponents.DotNetBar.ButtonX buttonXoaKhoa;
         private DevComponents.DotNetBar.ButtonX buttonThemKhoa;
