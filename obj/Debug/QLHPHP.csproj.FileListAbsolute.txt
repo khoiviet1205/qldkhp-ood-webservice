@@ -309,3 +309,31 @@ F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.ThemNganhControl.resources
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.TimKiemControl.resources
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.TroGiupControl.resources
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\GiaoDienOOD\bin\Debug\QLHPHP.exe
+D:\GiaoDienOOD\bin\Debug\QLHPHP.pdb
+D:\GiaoDienOOD\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\GiaoDienOOD\obj\Debug\QLHPHP.View.FormMain.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.AboutControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.DanhSachSVControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.View.FormSV.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.HocPhiControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.KhoaNganhControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.FormQL.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.Properties.Resources.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.QuyDinhControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.ReportControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.StartControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.ThemKhoaControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.ThemNganhControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.TimKiemControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.TroGiupControl.resources
+D:\GiaoDienOOD\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
