@@ -173,17 +173,16 @@ namespace QLHPHP
 
         }
 
-<<<<<<< .mine
         private void buttonThemKhoa_Click_1(object sender, EventArgs e)
         {
             buttonThemKhoa.Command = _Commands.ThemKhoaCommands.New;
         }
-=======
+
         private void dgvNganh_Click(object sender, EventArgs e)
         {
             MaNganhStatic = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString() ;
         }
->>>>>>> .r9
+
 
         private void buttonXoaKhoa_Click_1(object sender, EventArgs e)
         {
@@ -208,7 +207,7 @@ namespace QLHPHP
             {
                 ToastNotification.Show(this, "Vui lòng chọn Khoa để xóa!");
 
-<<<<<<< .mine
+
             }
         }
 
@@ -217,12 +216,52 @@ namespace QLHPHP
             LoadListKhoa();
         }
 
+        private void buttonThemNganh_Click_1(object sender, EventArgs e)
+        {
+            buttonThemNganh.Command = _Commands.ThemNganhCommands.New;
+        }
+
+        private void buttonXoaNganh_Click_1(object sender, EventArgs e)
+        {
+            nganh.MaNganh = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString();
+            string name = dgvNganh.CurrentRow.Cells[1].Value.ToString();
+            if (nganh.MaNganh != "")
+            {
+                try
+                {
+                    nganh.Xoa();
+                    LoadListNganh();
+                    ToastNotification.Show(this, "Đã xóa ngành " + name + " thành công");
+
+                }
+                catch
+                {
+                    ToastNotification.Show(this, "Lỗi!");
+
+                }
+            }
+            else
+            {
+                ToastNotification.Show(this, "Vui lòng chọn ngành để xóa!");
+
+            }
+        }
+
+        private void buttonLamMoiNganh_Click_1(object sender, EventArgs e)
+        {
+            LoadListNganh();
+        }
+
+        private void btnChiTietNganh_Click_1(object sender, EventArgs e)
+        {
+            btnChiTietNganh.Command = _Commands.ChiTietNganhCommands.New;
+        }
 
 
 
 
-=======
 
->>>>>>> .r9
+
+
     }
 }
