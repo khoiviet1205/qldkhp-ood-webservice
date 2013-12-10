@@ -50,6 +50,13 @@ namespace QLHPHP.Class
         {
            return  Service.ThongTinNganh();
         }
-
+        public DataTable MonHocCuaNganh()
+        {
+            return Service.MonHocCuaNganh(MaNganh);
+        }
+        public DataTable MonHocKhongThuocNganh()
+        {
+            return Service.MonHocKhongThuocNganh(MaNganh);
+        }
     }
 }

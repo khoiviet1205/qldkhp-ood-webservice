@@ -17,7 +17,7 @@ namespace QLHPHP
         {
             InitializeComponent();
         }
-
+        public static string MaNganhStatic;
         private AppCommands _Commands;
         Khoa khoa = new Khoa();
         Nganh nganh = new Nganh();
@@ -128,12 +128,13 @@ namespace QLHPHP
 
         private void buttonThemNganh_Click(object sender, EventArgs e)
         {
+           
             buttonThemNganh.Command = _Commands.ThemNganhCommands.New;
         }
 
         private void buttonXoaNganh_Click(object sender, EventArgs e)
         {
-            nganh.MaNganh = dgvNganh.CurrentRow.Cells[0].Value.ToString();
+            nganh.MaNganh = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString();
             string name = dgvNganh.CurrentRow.Cells[1].Value.ToString();
             if (nganh.MaNganh != "")
             {
@@ -170,6 +171,11 @@ namespace QLHPHP
         private void superTabControl1_SelectedTabChanged(object sender, SuperTabStripSelectedTabChangedEventArgs e)
         {
 
+        }
+
+        private void dgvNganh_Click(object sender, EventArgs e)
+        {
+            MaNganhStatic = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString() ;
         }
 
 

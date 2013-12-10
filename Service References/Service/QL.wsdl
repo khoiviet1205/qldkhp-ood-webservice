@@ -268,6 +268,48 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="MonHocCuaNganh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaNganh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MonHocCuaNganhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MonHocCuaNganhResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MonHocKhongThuocNganh">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaNganh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MonHocKhongThuocNganhResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MonHocKhongThuocNganhResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="ThemKhoa">
         <s:complexType>
           <s:sequence>
@@ -413,6 +455,17 @@
             </s:element>
           </s:sequence>
         </s:complexType>
+      </s:element>
+      <s:element name="ThemNganhMonHoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MaMonHoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaNganh" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ThemNganhMonHocResponse">
+        <s:complexType />
       </s:element>
       <s:element name="ThemDoiTuong">
         <s:complexType>
@@ -766,6 +819,18 @@
   <wsdl:message name="NganhCuaKhoaSoapOut">
     <wsdl:part name="parameters" element="tns:NganhCuaKhoaResponse" />
   </wsdl:message>
+  <wsdl:message name="MonHocCuaNganhSoapIn">
+    <wsdl:part name="parameters" element="tns:MonHocCuaNganh" />
+  </wsdl:message>
+  <wsdl:message name="MonHocCuaNganhSoapOut">
+    <wsdl:part name="parameters" element="tns:MonHocCuaNganhResponse" />
+  </wsdl:message>
+  <wsdl:message name="MonHocKhongThuocNganhSoapIn">
+    <wsdl:part name="parameters" element="tns:MonHocKhongThuocNganh" />
+  </wsdl:message>
+  <wsdl:message name="MonHocKhongThuocNganhSoapOut">
+    <wsdl:part name="parameters" element="tns:MonHocKhongThuocNganhResponse" />
+  </wsdl:message>
   <wsdl:message name="ThemKhoaSoapIn">
     <wsdl:part name="parameters" element="tns:ThemKhoa" />
   </wsdl:message>
@@ -825,6 +890,12 @@
   </wsdl:message>
   <wsdl:message name="NganhCuaMonHocSoapOut">
     <wsdl:part name="parameters" element="tns:NganhCuaMonHocResponse" />
+  </wsdl:message>
+  <wsdl:message name="ThemNganhMonHocSoapIn">
+    <wsdl:part name="parameters" element="tns:ThemNganhMonHoc" />
+  </wsdl:message>
+  <wsdl:message name="ThemNganhMonHocSoapOut">
+    <wsdl:part name="parameters" element="tns:ThemNganhMonHocResponse" />
   </wsdl:message>
   <wsdl:message name="ThemDoiTuongSoapIn">
     <wsdl:part name="parameters" element="tns:ThemDoiTuong" />
@@ -1025,6 +1096,14 @@
       <wsdl:input message="tns:NganhCuaKhoaSoapIn" />
       <wsdl:output message="tns:NganhCuaKhoaSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="MonHocCuaNganh">
+      <wsdl:input message="tns:MonHocCuaNganhSoapIn" />
+      <wsdl:output message="tns:MonHocCuaNganhSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MonHocKhongThuocNganh">
+      <wsdl:input message="tns:MonHocKhongThuocNganhSoapIn" />
+      <wsdl:output message="tns:MonHocKhongThuocNganhSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="ThemKhoa">
       <wsdl:input message="tns:ThemKhoaSoapIn" />
       <wsdl:output message="tns:ThemKhoaSoapOut" />
@@ -1064,6 +1143,10 @@
     <wsdl:operation name="NganhCuaMonHoc">
       <wsdl:input message="tns:NganhCuaMonHocSoapIn" />
       <wsdl:output message="tns:NganhCuaMonHocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemNganhMonHoc">
+      <wsdl:input message="tns:ThemNganhMonHocSoapIn" />
+      <wsdl:output message="tns:ThemNganhMonHocSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="ThemDoiTuong">
       <wsdl:input message="tns:ThemDoiTuongSoapIn" />
@@ -1300,6 +1383,24 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="MonHocCuaNganh">
+      <soap:operation soapAction="http://tempuri.org/MonHocCuaNganh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MonHocKhongThuocNganh">
+      <soap:operation soapAction="http://tempuri.org/MonHocKhongThuocNganh" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ThemKhoa">
       <soap:operation soapAction="http://tempuri.org/ThemKhoa" style="document" />
       <wsdl:input>
@@ -1383,6 +1484,15 @@
     </wsdl:operation>
     <wsdl:operation name="NganhCuaMonHoc">
       <soap:operation soapAction="http://tempuri.org/NganhCuaMonHoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemNganhMonHoc">
+      <soap:operation soapAction="http://tempuri.org/ThemNganhMonHoc" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1735,6 +1845,24 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="MonHocCuaNganh">
+      <soap12:operation soapAction="http://tempuri.org/MonHocCuaNganh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MonHocKhongThuocNganh">
+      <soap12:operation soapAction="http://tempuri.org/MonHocKhongThuocNganh" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ThemKhoa">
       <soap12:operation soapAction="http://tempuri.org/ThemKhoa" style="document" />
       <wsdl:input>
@@ -1818,6 +1946,15 @@
     </wsdl:operation>
     <wsdl:operation name="NganhCuaMonHoc">
       <soap12:operation soapAction="http://tempuri.org/NganhCuaMonHoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemNganhMonHoc">
+      <soap12:operation soapAction="http://tempuri.org/ThemNganhMonHoc" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

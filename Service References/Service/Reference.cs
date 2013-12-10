@@ -80,6 +80,14 @@ namespace QLHPHP.Service {
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable NganhCuaKhoa(string MaKhoa);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MonHocCuaNganh", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable MonHocCuaNganh(string MaNganh);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/MonHocKhongThuocNganh", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable MonHocKhongThuocNganh(string MaNganh);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThemKhoa", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         void ThemKhoa(string MaKhoa, string TenKhoa);
@@ -119,6 +127,10 @@ namespace QLHPHP.Service {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/NganhCuaMonHoc", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataSet NganhCuaMonHoc(string MaMonHoc);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThemNganhMonHoc", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void ThemNganhMonHoc(string MaMonHoc, string MaNganh);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThemDoiTuong", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -300,6 +312,14 @@ namespace QLHPHP.Service {
             return base.Channel.NganhCuaKhoa(MaKhoa);
         }
         
+        public System.Data.DataTable MonHocCuaNganh(string MaNganh) {
+            return base.Channel.MonHocCuaNganh(MaNganh);
+        }
+        
+        public System.Data.DataTable MonHocKhongThuocNganh(string MaNganh) {
+            return base.Channel.MonHocKhongThuocNganh(MaNganh);
+        }
+        
         public void ThemKhoa(string MaKhoa, string TenKhoa) {
             base.Channel.ThemKhoa(MaKhoa, TenKhoa);
         }
@@ -338,6 +358,10 @@ namespace QLHPHP.Service {
         
         public System.Data.DataSet NganhCuaMonHoc(string MaMonHoc) {
             return base.Channel.NganhCuaMonHoc(MaMonHoc);
+        }
+        
+        public void ThemNganhMonHoc(string MaMonHoc, string MaNganh) {
+            base.Channel.ThemNganhMonHoc(MaMonHoc, MaNganh);
         }
         
         public void ThemDoiTuong(string MaDoiTuong, string TenDoiTuong, int TiLegiam) {

@@ -36,6 +36,14 @@
             this.cbKhoa = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.metroToolbar2 = new DevComponents.DotNetBar.Metro.MetroToolbar();
+            this.buttonThemNganh = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonXoaNganh = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonLamMoiNganh = new DevComponents.DotNetBar.ButtonItem();
+            this.btnChiTietNganh = new DevComponents.DotNetBar.ButtonItem();
+            this.tabNganh = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.metroToolbar1 = new DevComponents.DotNetBar.Metro.MetroToolbar();
@@ -46,21 +54,13 @@
             this.MaKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabKhoa = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.metroToolbar2 = new DevComponents.DotNetBar.Metro.MetroToolbar();
-            this.buttonThemNganh = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonXoaNganh = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonLamMoiNganh = new DevComponents.DotNetBar.ButtonItem();
-            this.btnChiTietNganh = new DevComponents.DotNetBar.ButtonItem();
-            this.tabNganh = new DevComponents.DotNetBar.SuperTabItem();
             this.DongButton = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNganh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoa)).BeginInit();
-            this.superTabControlPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvNganh
@@ -82,6 +82,7 @@
             this.dgvNganh.Name = "dgvNganh";
             this.dgvNganh.Size = new System.Drawing.Size(342, 181);
             this.dgvNganh.TabIndex = 4;
+            this.dgvNganh.Click += new System.EventHandler(this.dgvNganh_Click);
             // 
             // MaNganh
             // 
@@ -156,6 +157,93 @@
             this.tabNganh});
             this.superTabControl1.Text = "superTabControl1";
             this.superTabControl1.SelectedTabChanged += new System.EventHandler<DevComponents.DotNetBar.SuperTabStripSelectedTabChangedEventArgs>(this.superTabControl1_SelectedTabChanged);
+            // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.Controls.Add(this.labelX1);
+            this.superTabControlPanel2.Controls.Add(this.metroToolbar2);
+            this.superTabControlPanel2.Controls.Add(this.cbKhoa);
+            this.superTabControlPanel2.Controls.Add(this.dgvNganh);
+            this.superTabControlPanel2.Controls.Add(this.labelX2);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 25);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Size = new System.Drawing.Size(537, 385);
+            this.superTabControlPanel2.TabIndex = 0;
+            this.superTabControlPanel2.TabItem = this.tabNganh;
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX1.Location = new System.Drawing.Point(156, 17);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(259, 32);
+            this.labelX1.TabIndex = 22;
+            this.labelX1.Text = "DANH SÁCH CÁC NGÀNH ";
+            // 
+            // metroToolbar2
+            // 
+            this.metroToolbar2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.metroToolbar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroToolbar2.ContainerControlProcessDialogKey = true;
+            this.metroToolbar2.ExpandDirection = DevComponents.DotNetBar.Metro.eExpandDirection.Top;
+            this.metroToolbar2.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroToolbar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonThemNganh,
+            this.buttonXoaNganh,
+            this.buttonLamMoiNganh,
+            this.btnChiTietNganh});
+            this.metroToolbar2.Location = new System.Drawing.Point(135, 269);
+            this.metroToolbar2.Name = "metroToolbar2";
+            this.metroToolbar2.Size = new System.Drawing.Size(289, 46);
+            this.metroToolbar2.TabIndex = 5;
+            this.metroToolbar2.Text = "metroToolbar2";
+            // 
+            // buttonThemNganh
+            // 
+            this.buttonThemNganh.Image = global::QLHPHP.Properties.Resources.NewInvoice1;
+            this.buttonThemNganh.Name = "buttonThemNganh";
+            this.buttonThemNganh.Text = "buttonItem";
+            this.buttonThemNganh.Tooltip = "Thêm Ngành Mới";
+            this.buttonThemNganh.Click += new System.EventHandler(this.buttonThemNganh_Click);
+            // 
+            // buttonXoaNganh
+            // 
+            this.buttonXoaNganh.Image = global::QLHPHP.Properties.Resources.Delete1;
+            this.buttonXoaNganh.Name = "buttonXoaNganh";
+            this.buttonXoaNganh.Text = "buttonItem3";
+            this.buttonXoaNganh.Tooltip = "Xóa Ngành Đang Chọn";
+            this.buttonXoaNganh.Click += new System.EventHandler(this.buttonXoaNganh_Click);
+            // 
+            // buttonLamMoiNganh
+            // 
+            this.buttonLamMoiNganh.Image = global::QLHPHP.Properties.Resources.Refresh_button1;
+            this.buttonLamMoiNganh.Name = "buttonLamMoiNganh";
+            this.buttonLamMoiNganh.Text = "Cập Nhật Danh Sách";
+            this.buttonLamMoiNganh.Tooltip = "Cập Nhật Danh Sách";
+            this.buttonLamMoiNganh.Click += new System.EventHandler(this.buttonLamMoiNganh_Click);
+            // 
+            // btnChiTietNganh
+            // 
+            this.btnChiTietNganh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.btnChiTietNganh.Image = global::QLHPHP.Properties.Resources.Table;
+            this.btnChiTietNganh.Name = "btnChiTietNganh";
+            this.btnChiTietNganh.Text = "Chi Tiết Ngành";
+            this.btnChiTietNganh.Click += new System.EventHandler(this.btnChiTietNganh_Click);
+            // 
+            // tabNganh
+            // 
+            this.tabNganh.AttachedControl = this.superTabControlPanel2;
+            this.tabNganh.GlobalItem = false;
+            this.tabNganh.Name = "tabNganh";
+            this.tabNganh.Text = "NGÀNH";
             // 
             // superTabControlPanel1
             // 
@@ -267,93 +355,6 @@
             this.tabKhoa.Name = "tabKhoa";
             this.tabKhoa.Text = "KHOA";
             // 
-            // superTabControlPanel2
-            // 
-            this.superTabControlPanel2.Controls.Add(this.labelX1);
-            this.superTabControlPanel2.Controls.Add(this.metroToolbar2);
-            this.superTabControlPanel2.Controls.Add(this.cbKhoa);
-            this.superTabControlPanel2.Controls.Add(this.dgvNganh);
-            this.superTabControlPanel2.Controls.Add(this.labelX2);
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 25);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(537, 385);
-            this.superTabControlPanel2.TabIndex = 0;
-            this.superTabControlPanel2.TabItem = this.tabNganh;
-            // 
-            // labelX1
-            // 
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX1.Location = new System.Drawing.Point(156, 17);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(259, 32);
-            this.labelX1.TabIndex = 22;
-            this.labelX1.Text = "DANH SÁCH CÁC NGÀNH ";
-            // 
-            // metroToolbar2
-            // 
-            this.metroToolbar2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.metroToolbar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroToolbar2.ContainerControlProcessDialogKey = true;
-            this.metroToolbar2.ExpandDirection = DevComponents.DotNetBar.Metro.eExpandDirection.Top;
-            this.metroToolbar2.Font = new System.Drawing.Font("Segoe UI", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroToolbar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonThemNganh,
-            this.buttonXoaNganh,
-            this.buttonLamMoiNganh,
-            this.btnChiTietNganh});
-            this.metroToolbar2.Location = new System.Drawing.Point(135, 269);
-            this.metroToolbar2.Name = "metroToolbar2";
-            this.metroToolbar2.Size = new System.Drawing.Size(289, 75);
-            this.metroToolbar2.TabIndex = 5;
-            this.metroToolbar2.Text = "metroToolbar2";
-            // 
-            // buttonThemNganh
-            // 
-            this.buttonThemNganh.Image = global::QLHPHP.Properties.Resources.NewInvoice1;
-            this.buttonThemNganh.Name = "buttonThemNganh";
-            this.buttonThemNganh.Text = "buttonItem";
-            this.buttonThemNganh.Tooltip = "Thêm Ngành Mới";
-            this.buttonThemNganh.Click += new System.EventHandler(this.buttonThemNganh_Click);
-            // 
-            // buttonXoaNganh
-            // 
-            this.buttonXoaNganh.Image = global::QLHPHP.Properties.Resources.Delete1;
-            this.buttonXoaNganh.Name = "buttonXoaNganh";
-            this.buttonXoaNganh.Text = "buttonItem3";
-            this.buttonXoaNganh.Tooltip = "Xóa Ngành Đang Chọn";
-            this.buttonXoaNganh.Click += new System.EventHandler(this.buttonXoaNganh_Click);
-            // 
-            // buttonLamMoiNganh
-            // 
-            this.buttonLamMoiNganh.Image = global::QLHPHP.Properties.Resources.Refresh_button1;
-            this.buttonLamMoiNganh.Name = "buttonLamMoiNganh";
-            this.buttonLamMoiNganh.Text = "Cập Nhật Danh Sách";
-            this.buttonLamMoiNganh.Tooltip = "Cập Nhật Danh Sách";
-            this.buttonLamMoiNganh.Click += new System.EventHandler(this.buttonLamMoiNganh_Click);
-            // 
-            // btnChiTietNganh
-            // 
-            this.btnChiTietNganh.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.btnChiTietNganh.Image = global::QLHPHP.Properties.Resources.Table;
-            this.btnChiTietNganh.Name = "btnChiTietNganh";
-            this.btnChiTietNganh.Text = "Chi Tiết Ngành";
-            this.btnChiTietNganh.Click += new System.EventHandler(this.btnChiTietNganh_Click);
-            // 
-            // tabNganh
-            // 
-            this.tabNganh.AttachedControl = this.superTabControlPanel2;
-            this.tabNganh.GlobalItem = false;
-            this.tabNganh.Name = "tabNganh";
-            this.tabNganh.Text = "NGÀNH";
-            // 
             // DongButton
             // 
             this.DongButton.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -378,9 +379,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvNganh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoa)).EndInit();
-            this.superTabControlPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

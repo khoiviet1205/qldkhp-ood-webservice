@@ -74,5 +74,9 @@ namespace QLHPHP.Class
         {
             return Service.SinhVienDKMonHoc();
         }
+        public void ThemNganhMonHoc()
+        {
+            Service.ThemNganhMonHoc(Mamonhoc, manganh);
+        }
     }
 }
