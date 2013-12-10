@@ -29,8 +29,15 @@ namespace QLHPHP.Class
         public override void Xoa()
         {
             base.Xoa();
+            Service.XoaPhieuDKMonHoc(Mssv);
             Service.XoaCTPHIEUDK(Mssv);
+            
         }
+        public void XoaBangMaMon()
+        {
+            Service.XoaCTPHIEUDKBangMaMon(maMonHoc);
+        }
+
     
     }
 }

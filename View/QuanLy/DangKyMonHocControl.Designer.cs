@@ -30,8 +30,20 @@
         {
             this.buttonDong = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.huymon = new System.Windows.Forms.Button();
+            this.SoLuongDKMonHoc = new System.Windows.Forms.DataGridView();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTCSinhVien = new System.Windows.Forms.DataGridView();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).BeginInit();
             this.panelEx1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TongTCSinhVien)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDong
@@ -51,6 +63,9 @@
             this.groupPanel1.BackColor = System.Drawing.Color.White;
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.TongTCSinhVien);
+            this.groupPanel1.Controls.Add(this.huymon);
+            this.groupPanel1.Controls.Add(this.SoLuongDKMonHoc);
             this.groupPanel1.Location = new System.Drawing.Point(6, 3);
             this.groupPanel1.Name = "groupPanel1";
             this.groupPanel1.Size = new System.Drawing.Size(826, 431);
@@ -83,7 +98,31 @@
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 3;
-            this.groupPanel1.Text = "Quản Lý ĐKHP";
+            this.groupPanel1.Text = "Hủy Môn học";
+            this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
+            // 
+            // huymon
+            // 
+            this.huymon.Location = new System.Drawing.Point(22, 258);
+            this.huymon.Name = "huymon";
+            this.huymon.Size = new System.Drawing.Size(128, 23);
+            this.huymon.TabIndex = 1;
+            this.huymon.Text = "hủy môn học";
+            this.huymon.UseVisualStyleBackColor = true;
+            this.huymon.Click += new System.EventHandler(this.huymon_Click);
+            // 
+            // SoLuongDKMonHoc
+            // 
+            this.SoLuongDKMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SoLuongDKMonHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaMon,
+            this.TenMonHoc,
+            this.SoLuong});
+            this.SoLuongDKMonHoc.Location = new System.Drawing.Point(3, 33);
+            this.SoLuongDKMonHoc.Name = "SoLuongDKMonHoc";
+            this.SoLuongDKMonHoc.Size = new System.Drawing.Size(272, 219);
+            this.SoLuongDKMonHoc.TabIndex = 0;
+            this.SoLuongDKMonHoc.Click += new System.EventHandler(this.SoLuongDKMonHoc_Click);
             // 
             // panelEx1
             // 
@@ -102,6 +141,58 @@
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 0;
             // 
+            // MaMon
+            // 
+            this.MaMon.DataPropertyName = "MaMon";
+            this.MaMon.HeaderText = "Mã Môn";
+            this.MaMon.Name = "MaMon";
+            this.MaMon.Visible = false;
+            // 
+            // TenMonHoc
+            // 
+            this.TenMonHoc.DataPropertyName = "TenMonHoc";
+            this.TenMonHoc.HeaderText = "Môn Học";
+            this.TenMonHoc.Name = "TenMonHoc";
+            this.TenMonHoc.Width = 150;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng DK";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 80;
+            // 
+            // TongTCSinhVien
+            // 
+            this.TongTCSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TongTCSinhVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MSSV,
+            this.HoTen,
+            this.TongTc});
+            this.TongTCSinhVien.Location = new System.Drawing.Point(411, 57);
+            this.TongTCSinhVien.Name = "TongTCSinhVien";
+            this.TongTCSinhVien.Size = new System.Drawing.Size(389, 150);
+            this.TongTCSinhVien.TabIndex = 2;
+            // 
+            // MSSV
+            // 
+            this.MSSV.DataPropertyName = "MSSV";
+            this.MSSV.HeaderText = "MSSV";
+            this.MSSV.Name = "MSSV";
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.Name = "HoTen";
+            this.HoTen.Width = 150;
+            // 
+            // TongTc
+            // 
+            this.TongTc.DataPropertyName = "Tong";
+            this.TongTc.HeaderText = "Tổng TC";
+            this.TongTc.Name = "TongTc";
+            // 
             // DangKyMonHocControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,7 +201,10 @@
             this.Name = "DangKyMonHocControl";
             this.Size = new System.Drawing.Size(841, 485);
             this.Load += new System.EventHandler(this.DangKyMonHocControl_Load);
+            this.groupPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).EndInit();
             this.panelEx1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TongTCSinhVien)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -120,6 +214,15 @@
         private DevComponents.DotNetBar.ButtonX buttonDong;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.PanelEx panelEx1;
+        private System.Windows.Forms.DataGridView SoLuongDKMonHoc;
+        private System.Windows.Forms.Button huymon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMonHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridView TongTCSinhVien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTc;
 
     }
 }

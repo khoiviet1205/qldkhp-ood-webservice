@@ -122,5 +122,10 @@ namespace QLHPHP
         {
 
         }
+
+        private void DangKyMonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace QLHPHP.Class
 {
-    class MonHoc:QuanLy
+    class MonHoc : QuanLy
     {
         private string mamonhoc;
 
@@ -46,7 +46,7 @@ namespace QLHPHP.Class
         public override void Them()
         {
             base.Them();
-            Service.ThemMonHoc(mamonhoc,tenmonhoc,sotclt,sotcth,manganh);
+            Service.ThemMonHoc(mamonhoc, tenmonhoc, sotclt, sotcth, manganh);
         }
         public override void Xoa()
         {
@@ -60,7 +60,7 @@ namespace QLHPHP.Class
         }
         public DataSet DanhSachMonHoc()
         {
-           return  Service.DanhSachMonHoc();
+            return Service.DanhSachMonHoc();
         }
         public DataSet TimMonHoc()
         {
@@ -69,6 +69,10 @@ namespace QLHPHP.Class
         public DataSet NganhCuaMonHoc()
         {
             return Service.NganhCuaMonHoc(mamonhoc);
+        }
+        public DataTable SinhVienDKMonHoc()
+        {
+            return Service.SinhVienDKMonHoc();
         }
     }
 }

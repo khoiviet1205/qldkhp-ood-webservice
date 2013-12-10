@@ -16,6 +16,7 @@ namespace QLHPHP
             InitializeComponent();
         }
         private MonHoc monhoc = new MonHoc();
+
         private AppCommands _Commands;
         /// <summary>
         /// Gets or sets the commands associated with the control.
@@ -54,7 +55,14 @@ namespace QLHPHP
         {
             dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
         }
-
+        private void Reset()
+        {
+            txtMaMonHoc.Text = "";
+            txtTenMonHoc.Text = "";
+            txtTCLT.Text = "";
+            txtTCTH.Text = "";
+            txtTongSoTC.Text = "";
+        }
         private void binding()
         {
             txtMaMonHoc.DataBindings.Clear();
@@ -71,19 +79,19 @@ namespace QLHPHP
 
         private void LoadDSMonHoc()
         {
-           
+
         }
         private void LoadDSLoaiMon()
         {
-            
+
         }
 
         private void bindingMH()
         {
-            
+
 
         }
-       
+
         private void dgvDSMonHoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -94,34 +102,81 @@ namespace QLHPHP
             }
             catch (Exception)
             {
-               
+
             }
-            
+
         }
 
         private void btnNhapLai_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                monhoc.Mamonhoc = txtMaMonHoc.Text;
+                monhoc.Tenmonhoc = txtTenMonHoc.Text;
+                monhoc.Sotclt = int.Parse(txtTCLT.Text);
+                monhoc.Sotcth = int.Parse(txtTCTH.Text);
+                monhoc.Manganh = "";
+                monhoc.Them();
+                dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
+                ToastNotification.Show(this, "Thêm Thành Công !");
+                Reset();
+            }
+            catch (Exception)
+            {
+
+                ToastNotification.Show(this, "Thêm không Thành Công !");
+            }
+
+
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                monhoc.Mamonhoc = txtMaMonHoc.Text;
+                monhoc.Xoa();
+                dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
+                ToastNotification.Show(this, "Xóa Thành Công !");
+                Reset();
+            }
+            catch (Exception)
+            {
+
+                ToastNotification.Show(this, "Xóa không Thành Công !");
+            }
         }
 
         private void btnCapNhap_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                monhoc.Mamonhoc = txtMaMonHoc.Text;
+                monhoc.Tenmonhoc = txtTenMonHoc.Text;
+                monhoc.Sotclt = int.Parse(txtTCLT.Text);
+                monhoc.Sotcth = int.Parse(txtTCTH.Text);
+                monhoc.Manganh = "";
+                monhoc.Sua();
+                dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
+                ToastNotification.Show(this, "Sửa Thành Công !");
+                Reset();
+            }
+            catch (Exception)
+            {
+
+                ToastNotification.Show(this, "Sửa không Thành Công !");
+            }
         }
 
         private void txtTimMon_TextChanged_1(object sender, EventArgs e)

@@ -42,18 +42,18 @@ namespace QLHPHP.View
             //
 
             GwDKMonhoc.DataSource = sv.ThongTinDKMonHoc().Tables["SINHVIEN"];
-            foreach (DataGridViewRow row in GwDKMonhoc.Rows)
-            {
-                DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[5];
-                if (chk.Selected == true)
-                {
-                    chk.Selected = false;
-                }
-                else
-                {
-                    chk.Selected = true;
-                }
-            }
+            //foreach (DataGridViewRow row in GwDKMonhoc.Rows)
+            //{
+            //    DataGridViewCheckBoxCell chk = (DataGridViewCheckBoxCell)row.Cells[5];
+            //    if (chk.Selected == true)
+            //    {
+            //        chk.Selected = false;
+            //    }
+            //    else
+            //    {
+            //        chk.Selected = true;
+            //    }
+            //}
 
         }
 

@@ -42,6 +42,7 @@
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.dgvDSNganh = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.TenNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.txtTongSoTC = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTCTH = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -64,8 +65,7 @@
             this.TenMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTCLT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTCTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEx1.SuspendLayout();
             this.groupPanel4.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -308,6 +308,14 @@
             this.dgvDSNganh.Size = new System.Drawing.Size(281, 260);
             this.dgvDSNganh.TabIndex = 14;
             // 
+            // TenNganh
+            // 
+            this.TenNganh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenNganh.DataPropertyName = "TenNganh";
+            this.TenNganh.HeaderText = "Ngành";
+            this.TenNganh.Name = "TenNganh";
+            this.TenNganh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // groupPanel1
             // 
             this.groupPanel1.BackColor = System.Drawing.Color.White;
@@ -543,7 +551,6 @@
             this.txtMaMonHoc.ForeColor = System.Drawing.Color.Black;
             this.txtMaMonHoc.Location = new System.Drawing.Point(99, 16);
             this.txtMaMonHoc.Name = "txtMaMonHoc";
-            this.txtMaMonHoc.ReadOnly = true;
             this.txtMaMonHoc.Size = new System.Drawing.Size(81, 20);
             this.txtMaMonHoc.TabIndex = 8;
             // 
@@ -585,7 +592,7 @@
             this.TenMonHoc,
             this.SoTCLT,
             this.SoTCTH,
-            this.Nganh});
+            this.TongTC});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -641,20 +648,12 @@
             this.SoTCTH.Name = "SoTCTH";
             this.SoTCTH.Visible = false;
             // 
-            // Nganh
+            // TongTC
             // 
-            this.Nganh.DataPropertyName = "TenNganh";
-            this.Nganh.HeaderText = "Ngành";
-            this.Nganh.Name = "Nganh";
-            this.Nganh.Visible = false;
-            // 
-            // TenNganh
-            // 
-            this.TenNganh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenNganh.DataPropertyName = "TenNganh";
-            this.TenNganh.HeaderText = "Ngành";
-            this.TenNganh.Name = "TenNganh";
-            this.TenNganh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TongTC.DataPropertyName = "TongTC";
+            this.TongTC.HeaderText = "Tổng TC";
+            this.TongTC.Name = "TongTC";
+            this.TongTC.Width = 50;
             // 
             // QuanLyMonHocControl
             // 
@@ -706,11 +705,11 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel4;
         private DevComponents.DotNetBar.Controls.TextBoxX txtTimMon;
         private DevComponents.DotNetBar.LabelX labelX10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNganh;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTCLT;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoTCTH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nganh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNganh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTC;
     }
 }

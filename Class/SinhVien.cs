@@ -118,6 +118,10 @@ namespace QLHPHP.Class
         {
            return Service.TimKiem(Mssv.ToString(), hoten, gioitinh, diachi, email, madoituong, manganh);
         }
+        public DataTable TongTcSinhVien()
+        {
+            return Service.TongTCSinhVien();
+        }
     }
 
 }

@@ -56,6 +56,10 @@ namespace QLHPHP.Service {
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataSet TimKiem(string MSSV, string hoten, string gioitinh, string diachi, string email, string doituong, string nganh);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TongTCSinhVien", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Data.DataTable TongTCSinhVien();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThemNganh", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         void ThemNganh(string MaNganh, string TenNganh, string MaKhoa);
@@ -155,6 +159,10 @@ namespace QLHPHP.Service {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/XoaCTPHIEUDK", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         void XoaCTPHIEUDK(int MSSV);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/XoaCTPHIEUDKBangMaMon", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void XoaCTPHIEUDKBangMaMon(string Mamon);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThemPhieuThu", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -268,6 +276,10 @@ namespace QLHPHP.Service {
             return base.Channel.TimKiem(MSSV, hoten, gioitinh, diachi, email, doituong, nganh);
         }
         
+        public System.Data.DataTable TongTCSinhVien() {
+            return base.Channel.TongTCSinhVien();
+        }
+        
         public void ThemNganh(string MaNganh, string TenNganh, string MaKhoa) {
             base.Channel.ThemNganh(MaNganh, TenNganh, MaKhoa);
         }
@@ -366,6 +378,10 @@ namespace QLHPHP.Service {
         
         public void XoaCTPHIEUDK(int MSSV) {
             base.Channel.XoaCTPHIEUDK(MSSV);
+        }
+        
+        public void XoaCTPHIEUDKBangMaMon(string Mamon) {
+            base.Channel.XoaCTPHIEUDKBangMaMon(Mamon);
         }
         
         public void ThemPhieuThu(int MaPhieu, int MaPhieuDK, int SoTien, string NgayLap) {

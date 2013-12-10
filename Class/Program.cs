@@ -16,9 +16,9 @@ namespace QLHPHP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSV());
+            //Application.Run(new FormSV());
             //Application.Run(new FormQL());
-            //Application.Run(new FormMain());
+            Application.Run(new FormMain());
         }
     }
 }

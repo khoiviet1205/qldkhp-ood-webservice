@@ -185,6 +185,7 @@
             this.DangKyMonHoc.TileStyle.PaddingRight = 4;
             this.DangKyMonHoc.TileStyle.PaddingTop = 4;
             this.DangKyMonHoc.TileStyle.TextColor = System.Drawing.Color.White;
+            this.DangKyMonHoc.Click += new System.EventHandler(this.DangKyMonHoc_Click);
             // 
             // TimKiem
             // 

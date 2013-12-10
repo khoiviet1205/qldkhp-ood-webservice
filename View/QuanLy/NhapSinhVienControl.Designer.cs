@@ -354,6 +354,7 @@
             this.cancelButton.Symbol = "";
             this.cancelButton.TabIndex = 12;
             this.cancelButton.Tooltip = "Quay lại";
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // LuuSinhVien
             // 

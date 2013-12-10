@@ -182,6 +182,11 @@ namespace QLHPHP
 
         }
 
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            //cancelButton.Command = _Commands.DanhSachSVCommands.New;
+        }
+
 
     }
 }

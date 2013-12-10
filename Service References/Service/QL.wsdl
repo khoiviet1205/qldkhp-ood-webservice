@@ -179,6 +179,23 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="TongTCSinhVien">
+        <s:complexType />
+      </s:element>
+      <s:element name="TongTCSinhVienResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TongTCSinhVienResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="ThemNganh">
         <s:complexType>
           <s:sequence>
@@ -510,6 +527,16 @@
       <s:element name="XoaCTPHIEUDKResponse">
         <s:complexType />
       </s:element>
+      <s:element name="XoaCTPHIEUDKBangMaMon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Mamon" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XoaCTPHIEUDKBangMaMonResponse">
+        <s:complexType />
+      </s:element>
       <s:element name="ThemPhieuThu">
         <s:complexType>
           <s:sequence>
@@ -703,6 +730,12 @@
   <wsdl:message name="TimKiemSoapOut">
     <wsdl:part name="parameters" element="tns:TimKiemResponse" />
   </wsdl:message>
+  <wsdl:message name="TongTCSinhVienSoapIn">
+    <wsdl:part name="parameters" element="tns:TongTCSinhVien" />
+  </wsdl:message>
+  <wsdl:message name="TongTCSinhVienSoapOut">
+    <wsdl:part name="parameters" element="tns:TongTCSinhVienResponse" />
+  </wsdl:message>
   <wsdl:message name="ThemNganhSoapIn">
     <wsdl:part name="parameters" element="tns:ThemNganh" />
   </wsdl:message>
@@ -853,6 +886,12 @@
   <wsdl:message name="XoaCTPHIEUDKSoapOut">
     <wsdl:part name="parameters" element="tns:XoaCTPHIEUDKResponse" />
   </wsdl:message>
+  <wsdl:message name="XoaCTPHIEUDKBangMaMonSoapIn">
+    <wsdl:part name="parameters" element="tns:XoaCTPHIEUDKBangMaMon" />
+  </wsdl:message>
+  <wsdl:message name="XoaCTPHIEUDKBangMaMonSoapOut">
+    <wsdl:part name="parameters" element="tns:XoaCTPHIEUDKBangMaMonResponse" />
+  </wsdl:message>
   <wsdl:message name="ThemPhieuThuSoapIn">
     <wsdl:part name="parameters" element="tns:ThemPhieuThu" />
   </wsdl:message>
@@ -962,6 +1001,10 @@
       <wsdl:input message="tns:TimKiemSoapIn" />
       <wsdl:output message="tns:TimKiemSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="TongTCSinhVien">
+      <wsdl:input message="tns:TongTCSinhVienSoapIn" />
+      <wsdl:output message="tns:TongTCSinhVienSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="ThemNganh">
       <wsdl:input message="tns:ThemNganhSoapIn" />
       <wsdl:output message="tns:ThemNganhSoapOut" />
@@ -1061,6 +1104,10 @@
     <wsdl:operation name="XoaCTPHIEUDK">
       <wsdl:input message="tns:XoaCTPHIEUDKSoapIn" />
       <wsdl:output message="tns:XoaCTPHIEUDKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaCTPHIEUDKBangMaMon">
+      <wsdl:input message="tns:XoaCTPHIEUDKBangMaMonSoapIn" />
+      <wsdl:output message="tns:XoaCTPHIEUDKBangMaMonSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="ThemPhieuThu">
       <wsdl:input message="tns:ThemPhieuThuSoapIn" />
@@ -1192,6 +1239,15 @@
     </wsdl:operation>
     <wsdl:operation name="TimKiem">
       <soap:operation soapAction="http://tempuri.org/TimKiem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongTCSinhVien">
+      <soap:operation soapAction="http://tempuri.org/TongTCSinhVien" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1424,6 +1480,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="XoaCTPHIEUDKBangMaMon">
+      <soap:operation soapAction="http://tempuri.org/XoaCTPHIEUDKBangMaMon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="ThemPhieuThu">
       <soap:operation soapAction="http://tempuri.org/ThemPhieuThu" style="document" />
       <wsdl:input>
@@ -1609,6 +1674,15 @@
     </wsdl:operation>
     <wsdl:operation name="TimKiem">
       <soap12:operation soapAction="http://tempuri.org/TimKiem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TongTCSinhVien">
+      <soap12:operation soapAction="http://tempuri.org/TongTCSinhVien" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -1834,6 +1908,15 @@
     </wsdl:operation>
     <wsdl:operation name="XoaCTPHIEUDK">
       <soap12:operation soapAction="http://tempuri.org/XoaCTPHIEUDK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaCTPHIEUDKBangMaMon">
+      <soap12:operation soapAction="http://tempuri.org/XoaCTPHIEUDKBangMaMon" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

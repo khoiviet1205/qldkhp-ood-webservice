@@ -20,6 +20,8 @@ namespace QLHPHP
         SinhVien sv = new SinhVien();
         DoiTuong doituong = new DoiTuong();
         Nganh nganh = new Nganh();
+        TaiKhoan taikhoan = new TaiKhoan();
+        PhieuDangKi phieudangki = new PhieuDangKi();
         private AppCommands _Commands;
 
         /// <summary>
@@ -54,6 +56,7 @@ namespace QLHPHP
                 buttonDong.Command = null;
             }
         }
+
 
         private void binding()
         {
@@ -98,9 +101,13 @@ namespace QLHPHP
         private void btnThemSinhVien_Click(object sender, EventArgs e)
         {
 
+            btnThemSinhVien.Command = _Commands.NhapSinhVienCommands.New;
+
+
         }
         public void Reset()
         {
+            txtMaSinhVien.Text = "";
             txtHoTen.Text = "";
             txtNgaySinh.Text = "";
             txtGioiTinh.Text = "Chọn Giới Tính";
@@ -113,11 +120,16 @@ namespace QLHPHP
         {
             try
             {
-                sv.MSSV = int.Parse(txtMaSinhVien.Text); ;
+                sv.MSSV = int.Parse(txtMaSinhVien.Text);
+                taikhoan.Taikhoan = sv.MSSV.ToString();
+                phieudangki.Mssv = sv.MSSV;
+                
+                taikhoan.Xoa();
+                phieudangki.Xoa();
                 sv.Xoa();
-                ToastNotification.Show(this, "Đã xóa thành công!");
-                dgvDSSV.DataSource = sv.DanhSachSinhVien().Tables["SINHVIEN"];
                 Reset();
+                dgvDSSV.DataSource = sv.DanhSachSinhVien().Tables["SINHVIEN"];
+                ToastNotification.Show(this, "Đã xóa thành công!");
             }
             catch
             {
@@ -127,7 +139,7 @@ namespace QLHPHP
 
         private void btnCapNhatDSSV_Click(object sender, EventArgs e)
         {
-           
+            dgvDSSV.DataSource = sv.DanhSachSinhVien().Tables["SINHVIEN"];
 
         }
 
@@ -214,8 +226,7 @@ namespace QLHPHP
             sv.Hoten = txtNoiDung.Text;
             dgvDSSV.DataSource = sv.TimTheoTen().Tables["SINHVIEN"];
         }
-
-
+        //load lai danh sach
 
 
     }

@@ -167,6 +167,11 @@ namespace QLHPHP
             btnChiTietNganh.Command = _Commands.ChiTietNganhCommands.New;
         }
 
+        private void superTabControl1_SelectedTabChanged(object sender, SuperTabStripSelectedTabChangedEventArgs e)
+        {
+
+        }
+
 
 
 
