@@ -123,7 +123,6 @@ namespace QLHPHP
                 sv.MSSV = int.Parse(txtMaSinhVien.Text);
                 taikhoan.Taikhoan = sv.MSSV.ToString();
                 phieudangki.Mssv = sv.MSSV;
-                
                 taikhoan.Xoa();
                 phieudangki.Xoa();
                 sv.Xoa();

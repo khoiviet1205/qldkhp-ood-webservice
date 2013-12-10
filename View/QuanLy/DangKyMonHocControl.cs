@@ -104,7 +104,27 @@ namespace QLHPHP
 
         private void huymon_Click(object sender, EventArgs e)
         {
-            
+
+
+
+        }
+
+        private void SoLuongDKMonHoc_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                phieudk.MaMonHoc = SoLuongDKMonHoc.CurrentRow.Cells["MaMon"].Value.ToString();
+            }
+            catch (Exception)
+            {
+
+
+            }
+
+        }
+
+        private void Huy_Click(object sender, EventArgs e)
+        {
             try
             {
                 phieudk.XoaBangMaMon();
@@ -116,21 +136,6 @@ namespace QLHPHP
 
                 ToastNotification.Show(this, "Thất Bại!");
             }
-           
-        }
-
-        private void SoLuongDKMonHoc_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                phieudk.MaMonHoc = SoLuongDKMonHoc.CurrentRow.Cells["MaMon"].Value.ToString();
-            }
-            catch (Exception)
-            {
-                
-              
-            }
-           
         }
 
 

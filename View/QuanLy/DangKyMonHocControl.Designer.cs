@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonDong = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.huymon = new System.Windows.Forms.Button();
-            this.SoLuongDKMonHoc = new System.Windows.Forms.DataGridView();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.SoLuongDKMonHoc = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongTCSinhVien = new System.Windows.Forms.DataGridView();
+            this.TongTCSinhVien = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongTc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Huy = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).BeginInit();
             this.panelEx1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TongTCSinhVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,8 +65,8 @@
             this.groupPanel1.BackColor = System.Drawing.Color.White;
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.Huy);
             this.groupPanel1.Controls.Add(this.TongTCSinhVien);
-            this.groupPanel1.Controls.Add(this.huymon);
             this.groupPanel1.Controls.Add(this.SoLuongDKMonHoc);
             this.groupPanel1.Location = new System.Drawing.Point(6, 3);
             this.groupPanel1.Name = "groupPanel1";
@@ -98,31 +100,8 @@
             // 
             this.groupPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel1.TabIndex = 3;
-            this.groupPanel1.Text = "Hủy Môn học";
+            this.groupPanel1.Text = "Quản Lý";
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
-            // 
-            // huymon
-            // 
-            this.huymon.Location = new System.Drawing.Point(22, 258);
-            this.huymon.Name = "huymon";
-            this.huymon.Size = new System.Drawing.Size(128, 23);
-            this.huymon.TabIndex = 1;
-            this.huymon.Text = "hủy môn học";
-            this.huymon.UseVisualStyleBackColor = true;
-            this.huymon.Click += new System.EventHandler(this.huymon_Click);
-            // 
-            // SoLuongDKMonHoc
-            // 
-            this.SoLuongDKMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SoLuongDKMonHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaMon,
-            this.TenMonHoc,
-            this.SoLuong});
-            this.SoLuongDKMonHoc.Location = new System.Drawing.Point(3, 33);
-            this.SoLuongDKMonHoc.Name = "SoLuongDKMonHoc";
-            this.SoLuongDKMonHoc.Size = new System.Drawing.Size(272, 219);
-            this.SoLuongDKMonHoc.TabIndex = 0;
-            this.SoLuongDKMonHoc.Click += new System.EventHandler(this.SoLuongDKMonHoc_Click);
             // 
             // panelEx1
             // 
@@ -141,38 +120,68 @@
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 0;
             // 
+            // SoLuongDKMonHoc
+            // 
+            this.SoLuongDKMonHoc.AllowUserToOrderColumns = true;
+            this.SoLuongDKMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SoLuongDKMonHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaMon,
+            this.TenMonHoc,
+            this.SoLuong});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SoLuongDKMonHoc.DefaultCellStyle = dataGridViewCellStyle2;
+            this.SoLuongDKMonHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.SoLuongDKMonHoc.Location = new System.Drawing.Point(22, 44);
+            this.SoLuongDKMonHoc.Name = "SoLuongDKMonHoc";
+            this.SoLuongDKMonHoc.Size = new System.Drawing.Size(240, 150);
+            this.SoLuongDKMonHoc.TabIndex = 3;
+            // 
             // MaMon
             // 
             this.MaMon.DataPropertyName = "MaMon";
-            this.MaMon.HeaderText = "Mã Môn";
+            this.MaMon.HeaderText = "Ma Mon";
             this.MaMon.Name = "MaMon";
             this.MaMon.Visible = false;
             // 
             // TenMonHoc
             // 
             this.TenMonHoc.DataPropertyName = "TenMonHoc";
-            this.TenMonHoc.HeaderText = "Môn Học";
+            this.TenMonHoc.HeaderText = "Tên Môn";
             this.TenMonHoc.Name = "TenMonHoc";
-            this.TenMonHoc.Width = 150;
             // 
             // SoLuong
             // 
             this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số Lượng DK";
+            this.SoLuong.HeaderText = "Số Lượng";
             this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 80;
             // 
             // TongTCSinhVien
             // 
+            this.TongTCSinhVien.AllowUserToOrderColumns = true;
             this.TongTCSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.TongTCSinhVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MSSV,
             this.HoTen,
-            this.TongTc});
-            this.TongTCSinhVien.Location = new System.Drawing.Point(411, 57);
+            this.TongTC});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TongTCSinhVien.DefaultCellStyle = dataGridViewCellStyle1;
+            this.TongTCSinhVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.TongTCSinhVien.Location = new System.Drawing.Point(413, 44);
             this.TongTCSinhVien.Name = "TongTCSinhVien";
             this.TongTCSinhVien.Size = new System.Drawing.Size(389, 150);
-            this.TongTCSinhVien.TabIndex = 2;
+            this.TongTCSinhVien.TabIndex = 4;
             // 
             // MSSV
             // 
@@ -182,16 +191,28 @@
             // 
             // HoTen
             // 
-            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.DataPropertyName = "Hoten";
             this.HoTen.HeaderText = "Họ Tên";
             this.HoTen.Name = "HoTen";
             this.HoTen.Width = 150;
             // 
-            // TongTc
+            // TongTC
             // 
-            this.TongTc.DataPropertyName = "Tong";
-            this.TongTc.HeaderText = "Tổng TC";
-            this.TongTc.Name = "TongTc";
+            this.TongTC.DataPropertyName = "Tong";
+            this.TongTC.HeaderText = "Tổng TC";
+            this.TongTC.Name = "TongTC";
+            // 
+            // Huy
+            // 
+            this.Huy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Huy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Huy.Location = new System.Drawing.Point(22, 220);
+            this.Huy.Name = "Huy";
+            this.Huy.Size = new System.Drawing.Size(75, 23);
+            this.Huy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.Huy.TabIndex = 5;
+            this.Huy.Text = "Hủy Môn";
+            this.Huy.Click += new System.EventHandler(this.Huy_Click);
             // 
             // DangKyMonHocControl
             // 
@@ -202,8 +223,8 @@
             this.Size = new System.Drawing.Size(841, 485);
             this.Load += new System.EventHandler(this.DangKyMonHocControl_Load);
             this.groupPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).EndInit();
             this.panelEx1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TongTCSinhVien)).EndInit();
             this.ResumeLayout(false);
 
@@ -214,15 +235,15 @@
         private DevComponents.DotNetBar.ButtonX buttonDong;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.PanelEx panelEx1;
-        private System.Windows.Forms.DataGridView SoLuongDKMonHoc;
-        private System.Windows.Forms.Button huymon;
+        private DevComponents.DotNetBar.Controls.DataGridViewX SoLuongDKMonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridView TongTCSinhVien;
+        private DevComponents.DotNetBar.Controls.DataGridViewX TongTCSinhVien;
         private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TongTc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTC;
+        private DevComponents.DotNetBar.ButtonX Huy;
 
     }
 }

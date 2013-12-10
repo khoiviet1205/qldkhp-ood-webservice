@@ -76,25 +76,28 @@ namespace QLHPHP
         {
             if (txtTenNganh.Text == "")
             {
-                ToastNotification.Show(this, "Chưa nhập tên khoa ");
+                ToastNotification.Show(this, "Chưa nhập tên Ngành ");
             }
             else if (txtMaNganh.Text == "")
             {
-                ToastNotification.Show(this, "Chưa nhập mã khoa");
+                ToastNotification.Show(this, "Chưa nhập mã ngành");
             }
             else
             {
                 try
                 {
-                    nganh.TenNganh = txtMaNganh.Text;
+                    nganh.TenNganh = txtTenNganh.Text;
                     nganh.MaNganh = txtMaNganh.Text;
+                    nganh.MaKhoa = cbbKhoa2.SelectedValue.ToString();
+                    //ToastNotification.Show(this, nganh.MaKhoa);
                     nganh.Them();
+
                     ToastNotification.Show(this, "Đã thêm thành công!");
                     Reset();
                 }
                 catch (Exception)
                 {
-
+                    ToastNotification.Show(this, "Thêm KHÔNG thành công!");
                 }
             }
         }
