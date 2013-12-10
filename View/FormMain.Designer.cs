@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.reflectionLabel1 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.reflectionImage1 = new DevComponents.DotNetBar.Controls.ReflectionImage();
@@ -37,14 +38,17 @@
             this.btnThoat = new DevComponents.DotNetBar.ButtonX();
             this.txtUser = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtMatKhau = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.SuspendLayout();
             // 
             // reflectionLabel1
             // 
+            this.reflectionLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             // 
             // 
             // 
             this.reflectionLabel1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.reflectionLabel1.ForeColor = System.Drawing.Color.Black;
             this.reflectionLabel1.Location = new System.Drawing.Point(179, 49);
             this.reflectionLabel1.Name = "reflectionLabel1";
             this.reflectionLabel1.Size = new System.Drawing.Size(103, 27);
@@ -53,6 +57,7 @@
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
@@ -67,11 +72,13 @@
             // 
             // reflectionImage1
             // 
+            this.reflectionImage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             // 
             // 
             // 
             this.reflectionImage1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.reflectionImage1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.reflectionImage1.ForeColor = System.Drawing.Color.Black;
             this.reflectionImage1.Image = global::QLHPHP.Properties.Resources._1371827925_user5;
             this.reflectionImage1.Location = new System.Drawing.Point(12, 1);
             this.reflectionImage1.Name = "reflectionImage1";
@@ -81,10 +88,12 @@
             // 
             // labelX2
             // 
+            this.labelX2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             // 
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.ForeColor = System.Drawing.Color.Black;
             this.labelX2.Location = new System.Drawing.Point(34, 184);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(75, 23);
@@ -93,10 +102,12 @@
             // 
             // labelX3
             // 
+            this.labelX3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             // 
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.ForeColor = System.Drawing.Color.Black;
             this.labelX3.Location = new System.Drawing.Point(34, 221);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(75, 23);
@@ -128,7 +139,7 @@
             // 
             // txtUser
             // 
-            this.txtUser.BackColor = System.Drawing.Color.White;
+            this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             // 
             // 
             // 
@@ -143,7 +154,7 @@
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.BackColor = System.Drawing.Color.White;
+            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             // 
             // 
             // 
@@ -158,10 +169,16 @@
             this.txtMatKhau.UseSystemPasswordChar = true;
             this.txtMatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMatKhau_KeyDown);
             // 
+            // styleManager1
+            // 
+            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light;
+            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(154))))));
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(334, 326);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtUser);
@@ -197,5 +214,6 @@
         private DevComponents.DotNetBar.ButtonX btnThoat;
         private DevComponents.DotNetBar.Controls.TextBoxX txtUser;
         private DevComponents.DotNetBar.Controls.TextBoxX txtMatKhau;
+        private DevComponents.DotNetBar.StyleManager styleManager1;
     }
 }
