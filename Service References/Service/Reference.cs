@@ -72,6 +72,10 @@ namespace QLHPHP.Service {
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         void XoaNganh(string MaNganh);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/XoaMonRaKhoiNganh", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void XoaMonRaKhoiNganh(string MaMon, string Manganh);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThongTinNganh", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataSet ThongTinNganh();
@@ -106,15 +110,19 @@ namespace QLHPHP.Service {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ThemMonHoc", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void ThemMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, string MaNganh);
+        void ThemMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, int SLToiDa);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/SuaMonHoc", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        void SuaMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, string MaNganh);
+        void SuaMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, string MaNganh, int SLToiDa);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/XoaMonHoc", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         void XoaMonHoc(string MaMon);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/XoaMonHocNganh", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        void XoaMonHocNganh(string MaMon);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DanhSachMonHoc", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -304,6 +312,10 @@ namespace QLHPHP.Service {
             base.Channel.XoaNganh(MaNganh);
         }
         
+        public void XoaMonRaKhoiNganh(string MaMon, string Manganh) {
+            base.Channel.XoaMonRaKhoiNganh(MaMon, Manganh);
+        }
+        
         public System.Data.DataSet ThongTinNganh() {
             return base.Channel.ThongTinNganh();
         }
@@ -336,16 +348,20 @@ namespace QLHPHP.Service {
             return base.Channel.ThongTinKhoa();
         }
         
-        public void ThemMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, string MaNganh) {
-            base.Channel.ThemMonHoc(MaMonHoc, TenMonHoc, SoTCLT, SoTCTH, MaNganh);
+        public void ThemMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, int SLToiDa) {
+            base.Channel.ThemMonHoc(MaMonHoc, TenMonHoc, SoTCLT, SoTCTH, SLToiDa);
         }
         
-        public void SuaMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, string MaNganh) {
-            base.Channel.SuaMonHoc(MaMonHoc, TenMonHoc, SoTCLT, SoTCTH, MaNganh);
+        public void SuaMonHoc(string MaMonHoc, string TenMonHoc, int SoTCLT, int SoTCTH, string MaNganh, int SLToiDa) {
+            base.Channel.SuaMonHoc(MaMonHoc, TenMonHoc, SoTCLT, SoTCTH, MaNganh, SLToiDa);
         }
         
         public void XoaMonHoc(string MaMon) {
             base.Channel.XoaMonHoc(MaMon);
+        }
+        
+        public void XoaMonHocNganh(string MaMon) {
+            base.Channel.XoaMonHocNganh(MaMon);
         }
         
         public System.Data.DataSet DanhSachMonHoc() {

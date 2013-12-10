@@ -62,7 +62,9 @@ namespace QLHPHP
             txtTCLT.Text = "";
             txtTCTH.Text = "";
             txtTongSoTC.Text = "";
+            MaxSL.Text = "";
         }
+
         private void binding()
         {
             txtMaMonHoc.DataBindings.Clear();
@@ -75,6 +77,8 @@ namespace QLHPHP
             txtTCTH.DataBindings.Add("Text", dgvDSMonHoc.DataSource, "SoTCTH");
             int x = int.Parse(txtTCLT.Text.Trim()) + int.Parse(txtTCTH.Text.Trim());
             txtTongSoTC.Text = x.ToString();
+            MaxSL.DataBindings.Clear();
+            MaxSL.DataBindings.Add("Text", dgvDSMonHoc.DataSource, "SoSVToiDa");
         }
 
         private void LoadDSMonHoc()
@@ -109,48 +113,82 @@ namespace QLHPHP
 
         private void btnNhapLai_Click(object sender, EventArgs e)
         {
-
+            Reset();
+        }
+        private bool ThongBao()
+        {
+            if (txtMaMonHoc.Text.Trim() == "")
+            {
+                ToastNotification.Show(this, "Chưa nhập mã môn học !");
+                return false;
+            }
+            else if (txtTenMonHoc.Text.Trim() == "")
+            {
+                ToastNotification.Show(this, "Chưa nhập tên môn học !");
+                return false;
+            }
+            else if (txtTCLT.Text.Trim() == "")
+            {
+                ToastNotification.Show(this, "Chưa nhập số tín chỉ lý thuyết !");
+                return false;
+            }
+            if (txtTCTH.Text.Trim() == "")
+            {
+                ToastNotification.Show(this, "Chưa nhập tín chỉ thực hành học !");
+                return false;
+            }
+            return true;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            try
+            if (ThongBao())
             {
-                monhoc.Mamonhoc = txtMaMonHoc.Text;
-                monhoc.Tenmonhoc = txtTenMonHoc.Text;
-                monhoc.Sotclt = int.Parse(txtTCLT.Text);
-                monhoc.Sotcth = int.Parse(txtTCTH.Text);
-                monhoc.Manganh = "";
-                monhoc.Them();
-                dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
-                ToastNotification.Show(this, "Thêm Thành Công !");
-                Reset();
+                try
+                {
+                    monhoc.Mamonhoc = txtMaMonHoc.Text;
+                    monhoc.Tenmonhoc = txtTenMonHoc.Text;
+                    monhoc.Sotclt = int.Parse(txtTCLT.Text);
+                    monhoc.Sotcth = int.Parse(txtTCTH.Text);
+                    monhoc.Manganh = "";
+                    monhoc.SlToiDa = int.Parse(MaxSL.Text);
+                    monhoc.Them();
+                    dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
+                    ToastNotification.Show(this, "Thêm Thành Công !");
+                    Reset();
+                }
+                catch (Exception)
+                {
+
+                    ToastNotification.Show(this, "Thêm không Thành Công !");
+                }
             }
-            catch (Exception)
-            {
-
-                ToastNotification.Show(this, "Thêm không Thành Công !");
-            }
-
-
 
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            try
+            if (txtMaMonHoc.Text.Trim() == "")
             {
-                monhoc.Mamonhoc = txtMaMonHoc.Text;
-                monhoc.Xoa();
-                dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
-                ToastNotification.Show(this, "Xóa Thành Công !");
-                Reset();
+                ToastNotification.Show(this, "Chưa nhập mã môn học !");
             }
-            catch (Exception)
+            else
             {
+                try
+                {
+                    monhoc.Mamonhoc = txtMaMonHoc.Text;
+                    monhoc.Xoa();
+                    dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
+                    ToastNotification.Show(this, "Xóa Thành Công !");
+                    Reset();
+                }
+                catch (Exception)
+                {
 
-                ToastNotification.Show(this, "Xóa không Thành Công !");
+                    ToastNotification.Show(this, "Xóa không Thành Công !");
+                }
             }
+
         }
 
         private void btnCapNhap_Click(object sender, EventArgs e)
@@ -160,23 +198,28 @@ namespace QLHPHP
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            try
+            if (ThongBao())
             {
-                monhoc.Mamonhoc = txtMaMonHoc.Text;
-                monhoc.Tenmonhoc = txtTenMonHoc.Text;
-                monhoc.Sotclt = int.Parse(txtTCLT.Text);
-                monhoc.Sotcth = int.Parse(txtTCTH.Text);
-                monhoc.Manganh = "";
-                monhoc.Sua();
-                dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
-                ToastNotification.Show(this, "Sửa Thành Công !");
-                Reset();
-            }
-            catch (Exception)
-            {
+                try
+                {
+                    monhoc.Mamonhoc = txtMaMonHoc.Text;
+                    monhoc.Tenmonhoc = txtTenMonHoc.Text;
+                    monhoc.Sotclt = int.Parse(txtTCLT.Text);
+                    monhoc.Sotcth = int.Parse(txtTCTH.Text);
+                    monhoc.Manganh = "";
+                    monhoc.SlToiDa = int.Parse(MaxSL.Text);
+                    monhoc.Sua();
+                    dgvDSMonHoc.DataSource = monhoc.DanhSachMonHoc().Tables["MonHoc"];
+                    ToastNotification.Show(this, "Sửa Thành Công !");
+                    Reset();
+                }
+                catch (Exception)
+                {
 
-                ToastNotification.Show(this, "Sửa không Thành Công !");
+                    ToastNotification.Show(this, "Sửa không Thành Công !");
+                }
             }
+
         }
 
         private void txtTimMon_TextChanged_1(object sender, EventArgs e)
@@ -184,5 +227,9 @@ namespace QLHPHP
             monhoc.Tenmonhoc = txtTimMon.Text.Trim();
             dgvDSMonHoc.DataSource = monhoc.TimMonHoc().Tables["MonHoc"];
         }
+
+
+
+        
     }
 }

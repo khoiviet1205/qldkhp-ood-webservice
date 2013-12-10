@@ -43,20 +43,29 @@ namespace QLHPHP.Class
             get { return manganh; }
             set { manganh = value; }
         }
+        private int slToiDa;
+
+        public int SlToiDa
+        {
+            get { return slToiDa; }
+            set { slToiDa = value; }
+        }
         public override void Them()
         {
             base.Them();
-            Service.ThemMonHoc(mamonhoc, tenmonhoc, sotclt, sotcth, manganh);
+            Service.ThemMonHoc(mamonhoc, tenmonhoc, sotclt, sotcth,slToiDa);
         }
         public override void Xoa()
         {
             base.Xoa();
+            Service.XoaCTPHIEUDKBangMaMon(mamonhoc);
+            Service.XoaMonHocNganh(mamonhoc);
             Service.XoaMonHoc(mamonhoc);
         }
         public override void Sua()
         {
             base.Sua();
-            Service.SuaMonHoc(mamonhoc, tenmonhoc, sotclt, sotcth, manganh);
+            Service.SuaMonHoc(mamonhoc, tenmonhoc, sotclt, sotcth, manganh,slToiDa);
         }
         public DataSet DanhSachMonHoc()
         {
@@ -77,6 +86,10 @@ namespace QLHPHP.Class
         public void ThemNganhMonHoc()
         {
             Service.ThemNganhMonHoc(Mamonhoc, manganh);
+        }
+        public void XoaMonRaKhoiNganh()
+        {
+            Service.XoaMonRaKhoiNganh(Mamonhoc, manganh);
         }
     }
 }

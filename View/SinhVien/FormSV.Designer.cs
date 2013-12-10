@@ -37,19 +37,6 @@
             this.chon = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.txtDangKi = new DevComponents.DotNetBar.ButtonX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.btnXacNhan = new DevComponents.DotNetBar.ButtonX();
-            this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.txtMatKhauMoi = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX6 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem4 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.lbNganh = new DevComponents.DotNetBar.LabelX();
@@ -66,14 +53,27 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.btnXacNhan = new DevComponents.DotNetBar.ButtonX();
+            this.labelX11 = new DevComponents.DotNetBar.LabelX();
+            this.txtMatKhauMoi = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem4 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.txtDangKi = new DevComponents.DotNetBar.ButtonX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             ((System.ComponentModel.ISupportInitialize)(this.GwDKMonhoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
-            this.superTabControlPanel2.SuspendLayout();
-            this.superTabControlPanel3.SuspendLayout();
-            this.superTabControlPanel4.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
             this.panelEx1.SuspendLayout();
+            this.superTabControlPanel4.SuspendLayout();
+            this.superTabControlPanel3.SuspendLayout();
+            this.superTabControlPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // GwDKMonhoc
@@ -178,178 +178,6 @@
             this.superTabItem4});
             this.superTabControl1.TabVerticalSpacing = 8;
             // 
-            // superTabControlPanel2
-            // 
-            this.superTabControlPanel2.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
-            this.superTabControlPanel2.Controls.Add(this.txtDangKi);
-            this.superTabControlPanel2.Controls.Add(this.labelX3);
-            this.superTabControlPanel2.Controls.Add(this.GwDKMonhoc);
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(111, 0);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Padding = new System.Windows.Forms.Padding(12);
-            this.superTabControlPanel2.Size = new System.Drawing.Size(618, 394);
-            this.superTabControlPanel2.TabIndex = 2;
-            this.superTabControlPanel2.TabItem = this.superTabItem2;
-            // 
-            // txtDangKi
-            // 
-            this.txtDangKi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.txtDangKi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.txtDangKi.Location = new System.Drawing.Point(240, 363);
-            this.txtDangKi.Name = "txtDangKi";
-            this.txtDangKi.Size = new System.Drawing.Size(75, 23);
-            this.txtDangKi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.txtDangKi.TabIndex = 2;
-            this.txtDangKi.Text = "Đăng kí";
-            this.txtDangKi.Click += new System.EventHandler(this.txtDangKi_Click);
-            // 
-            // labelX3
-            // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
-            this.labelX3.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
-            this.labelX3.BackgroundStyle.BorderBottomWidth = 1;
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelX3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(12, 12);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(594, 23);
-            this.labelX3.TabIndex = 1;
-            this.labelX3.Text = "Đăng Ký Học Phần";
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.KeyTips = "D";
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "Đăng Ký";
-            // 
-            // superTabControlPanel3
-            // 
-            this.superTabControlPanel3.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
-            this.superTabControlPanel3.Controls.Add(this.labelX4);
-            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel3.Location = new System.Drawing.Point(111, 0);
-            this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(618, 394);
-            this.superTabControlPanel3.TabIndex = 3;
-            this.superTabControlPanel3.TabItem = this.superTabItem3;
-            // 
-            // labelX4
-            // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
-            this.labelX4.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
-            this.labelX4.BackgroundStyle.BorderBottomWidth = 1;
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(17, 16);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(582, 23);
-            this.labelX4.TabIndex = 2;
-            this.labelX4.Text = "Kết Quả Học Tập";
-            // 
-            // superTabItem3
-            // 
-            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
-            this.superTabItem3.GlobalItem = false;
-            this.superTabItem3.KeyTips = "K";
-            this.superTabItem3.Name = "superTabItem3";
-            this.superTabItem3.Text = "Kết Quả";
-            // 
-            // superTabControlPanel4
-            // 
-            this.superTabControlPanel4.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
-            this.superTabControlPanel4.Controls.Add(this.btnXacNhan);
-            this.superTabControlPanel4.Controls.Add(this.labelX11);
-            this.superTabControlPanel4.Controls.Add(this.txtMatKhauMoi);
-            this.superTabControlPanel4.Controls.Add(this.labelX6);
-            this.superTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel4.Location = new System.Drawing.Point(111, 0);
-            this.superTabControlPanel4.Name = "superTabControlPanel4";
-            this.superTabControlPanel4.Padding = new System.Windows.Forms.Padding(12);
-            this.superTabControlPanel4.Size = new System.Drawing.Size(618, 394);
-            this.superTabControlPanel4.TabIndex = 4;
-            this.superTabControlPanel4.TabItem = this.superTabItem4;
-            // 
-            // btnXacNhan
-            // 
-            this.btnXacNhan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnXacNhan.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnXacNhan.Location = new System.Drawing.Point(108, 109);
-            this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
-            this.btnXacNhan.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXacNhan.TabIndex = 5;
-            this.btnXacNhan.Text = "Xác Nhận";
-            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
-            // 
-            // labelX11
-            // 
-            this.labelX11.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.ForeColor = System.Drawing.Color.Black;
-            this.labelX11.Location = new System.Drawing.Point(15, 64);
-            this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(87, 23);
-            this.labelX11.TabIndex = 4;
-            this.labelX11.Text = "Nhập khẩu mới :";
-            // 
-            // txtMatKhauMoi
-            // 
-            this.txtMatKhauMoi.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtMatKhauMoi.Border.Class = "TextBoxBorder";
-            this.txtMatKhauMoi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtMatKhauMoi.ForeColor = System.Drawing.Color.Black;
-            this.txtMatKhauMoi.Location = new System.Drawing.Point(108, 65);
-            this.txtMatKhauMoi.Name = "txtMatKhauMoi";
-            this.txtMatKhauMoi.Size = new System.Drawing.Size(100, 22);
-            this.txtMatKhauMoi.TabIndex = 3;
-            // 
-            // labelX6
-            // 
-            this.labelX6.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX6.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
-            this.labelX6.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
-            this.labelX6.BackgroundStyle.BorderBottomWidth = 1;
-            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelX6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX6.ForeColor = System.Drawing.Color.Black;
-            this.labelX6.Location = new System.Drawing.Point(12, 12);
-            this.labelX6.Name = "labelX6";
-            this.labelX6.Size = new System.Drawing.Size(594, 23);
-            this.labelX6.TabIndex = 2;
-            this.labelX6.Text = "Đổi Mật Khẩu";
-            // 
-            // superTabItem4
-            // 
-            this.superTabItem4.AttachedControl = this.superTabControlPanel4;
-            this.superTabItem4.GlobalItem = false;
-            this.superTabItem4.KeyTips = "M";
-            this.superTabItem4.Name = "superTabItem4";
-            this.superTabItem4.Text = "Tài Khoản";
-            // 
             // superTabControlPanel1
             // 
             this.superTabControlPanel1.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
@@ -401,7 +229,7 @@
             this.lbNganh.ForeColor = System.Drawing.Color.Black;
             this.lbNganh.Location = new System.Drawing.Point(115, 224);
             this.lbNganh.Name = "lbNganh";
-            this.lbNganh.Size = new System.Drawing.Size(171, 33);
+            this.lbNganh.Size = new System.Drawing.Size(317, 33);
             this.lbNganh.TabIndex = 2;
             this.lbNganh.Text = "labelX11";
             // 
@@ -415,7 +243,7 @@
             this.lbDoiTuong.ForeColor = System.Drawing.Color.Black;
             this.lbDoiTuong.Location = new System.Drawing.Point(115, 190);
             this.lbDoiTuong.Name = "lbDoiTuong";
-            this.lbDoiTuong.Size = new System.Drawing.Size(171, 31);
+            this.lbDoiTuong.Size = new System.Drawing.Size(395, 31);
             this.lbDoiTuong.TabIndex = 2;
             this.lbDoiTuong.Text = "labelX11";
             // 
@@ -429,7 +257,7 @@
             this.lbGioiTinh.ForeColor = System.Drawing.Color.Black;
             this.lbGioiTinh.Location = new System.Drawing.Point(115, 156);
             this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(171, 28);
+            this.lbGioiTinh.Size = new System.Drawing.Size(372, 28);
             this.lbGioiTinh.TabIndex = 2;
             this.lbGioiTinh.Text = "labelX11";
             // 
@@ -443,7 +271,7 @@
             this.lbNgaySinh.ForeColor = System.Drawing.Color.Black;
             this.lbNgaySinh.Location = new System.Drawing.Point(115, 123);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(126, 27);
+            this.lbNgaySinh.Size = new System.Drawing.Size(307, 27);
             this.lbNgaySinh.TabIndex = 2;
             this.lbNgaySinh.Text = "labelX11";
             // 
@@ -457,7 +285,7 @@
             this.lbMSSV.ForeColor = System.Drawing.Color.Black;
             this.lbMSSV.Location = new System.Drawing.Point(115, 91);
             this.lbMSSV.Name = "lbMSSV";
-            this.lbMSSV.Size = new System.Drawing.Size(171, 26);
+            this.lbMSSV.Size = new System.Drawing.Size(343, 26);
             this.lbMSSV.TabIndex = 2;
             this.lbMSSV.Text = "labelX11";
             // 
@@ -471,7 +299,7 @@
             this.lbHoTen.ForeColor = System.Drawing.Color.Black;
             this.lbHoTen.Location = new System.Drawing.Point(115, 55);
             this.lbHoTen.Name = "lbHoTen";
-            this.lbHoTen.Size = new System.Drawing.Size(171, 30);
+            this.lbHoTen.Size = new System.Drawing.Size(286, 30);
             this.lbHoTen.TabIndex = 2;
             this.lbHoTen.Text = "labelX11";
             // 
@@ -585,6 +413,178 @@
             this.superTabItem1.Name = "superTabItem1";
             this.superTabItem1.Text = "Thông Tin";
             // 
+            // superTabControlPanel4
+            // 
+            this.superTabControlPanel4.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
+            this.superTabControlPanel4.Controls.Add(this.btnXacNhan);
+            this.superTabControlPanel4.Controls.Add(this.labelX11);
+            this.superTabControlPanel4.Controls.Add(this.txtMatKhauMoi);
+            this.superTabControlPanel4.Controls.Add(this.labelX6);
+            this.superTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel4.Location = new System.Drawing.Point(111, 0);
+            this.superTabControlPanel4.Name = "superTabControlPanel4";
+            this.superTabControlPanel4.Padding = new System.Windows.Forms.Padding(12);
+            this.superTabControlPanel4.Size = new System.Drawing.Size(618, 394);
+            this.superTabControlPanel4.TabIndex = 4;
+            this.superTabControlPanel4.TabItem = this.superTabItem4;
+            // 
+            // btnXacNhan
+            // 
+            this.btnXacNhan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnXacNhan.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnXacNhan.Location = new System.Drawing.Point(108, 109);
+            this.btnXacNhan.Name = "btnXacNhan";
+            this.btnXacNhan.Size = new System.Drawing.Size(75, 23);
+            this.btnXacNhan.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnXacNhan.TabIndex = 5;
+            this.btnXacNhan.Text = "Xác Nhận";
+            this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+            // 
+            // labelX11
+            // 
+            this.labelX11.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX11.ForeColor = System.Drawing.Color.Black;
+            this.labelX11.Location = new System.Drawing.Point(15, 64);
+            this.labelX11.Name = "labelX11";
+            this.labelX11.Size = new System.Drawing.Size(87, 23);
+            this.labelX11.TabIndex = 4;
+            this.labelX11.Text = "Nhập khẩu mới :";
+            // 
+            // txtMatKhauMoi
+            // 
+            this.txtMatKhauMoi.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtMatKhauMoi.Border.Class = "TextBoxBorder";
+            this.txtMatKhauMoi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMatKhauMoi.ForeColor = System.Drawing.Color.Black;
+            this.txtMatKhauMoi.Location = new System.Drawing.Point(108, 65);
+            this.txtMatKhauMoi.Name = "txtMatKhauMoi";
+            this.txtMatKhauMoi.Size = new System.Drawing.Size(100, 22);
+            this.txtMatKhauMoi.TabIndex = 3;
+            // 
+            // labelX6
+            // 
+            this.labelX6.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
+            this.labelX6.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
+            this.labelX6.BackgroundStyle.BorderBottomWidth = 1;
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelX6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX6.ForeColor = System.Drawing.Color.Black;
+            this.labelX6.Location = new System.Drawing.Point(12, 12);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(594, 23);
+            this.labelX6.TabIndex = 2;
+            this.labelX6.Text = "Đổi Mật Khẩu";
+            // 
+            // superTabItem4
+            // 
+            this.superTabItem4.AttachedControl = this.superTabControlPanel4;
+            this.superTabItem4.GlobalItem = false;
+            this.superTabItem4.KeyTips = "M";
+            this.superTabItem4.Name = "superTabItem4";
+            this.superTabItem4.Text = "Tài Khoản";
+            // 
+            // superTabControlPanel3
+            // 
+            this.superTabControlPanel3.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
+            this.superTabControlPanel3.Controls.Add(this.labelX4);
+            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel3.Location = new System.Drawing.Point(111, 0);
+            this.superTabControlPanel3.Name = "superTabControlPanel3";
+            this.superTabControlPanel3.Size = new System.Drawing.Size(618, 394);
+            this.superTabControlPanel3.TabIndex = 3;
+            this.superTabControlPanel3.TabItem = this.superTabItem3;
+            // 
+            // labelX4
+            // 
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
+            this.labelX4.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
+            this.labelX4.BackgroundStyle.BorderBottomWidth = 1;
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX4.ForeColor = System.Drawing.Color.Black;
+            this.labelX4.Location = new System.Drawing.Point(17, 16);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(582, 23);
+            this.labelX4.TabIndex = 2;
+            this.labelX4.Text = "Kết Quả Học Tập";
+            // 
+            // superTabItem3
+            // 
+            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
+            this.superTabItem3.GlobalItem = false;
+            this.superTabItem3.KeyTips = "K";
+            this.superTabItem3.Name = "superTabItem3";
+            this.superTabItem3.Text = "Kết Quả";
+            // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
+            this.superTabControlPanel2.Controls.Add(this.txtDangKi);
+            this.superTabControlPanel2.Controls.Add(this.labelX3);
+            this.superTabControlPanel2.Controls.Add(this.GwDKMonhoc);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(111, 0);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Padding = new System.Windows.Forms.Padding(12);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(618, 394);
+            this.superTabControlPanel2.TabIndex = 2;
+            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // txtDangKi
+            // 
+            this.txtDangKi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.txtDangKi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.txtDangKi.Location = new System.Drawing.Point(240, 363);
+            this.txtDangKi.Name = "txtDangKi";
+            this.txtDangKi.Size = new System.Drawing.Size(75, 23);
+            this.txtDangKi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.txtDangKi.TabIndex = 2;
+            this.txtDangKi.Text = "Đăng kí";
+            this.txtDangKi.Click += new System.EventHandler(this.txtDangKi_Click);
+            // 
+            // labelX3
+            // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
+            this.labelX3.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
+            this.labelX3.BackgroundStyle.BorderBottomWidth = 1;
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelX3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.ForeColor = System.Drawing.Color.Black;
+            this.labelX3.Location = new System.Drawing.Point(12, 12);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(594, 23);
+            this.labelX3.TabIndex = 1;
+            this.labelX3.Text = "Đăng Ký Học Phần";
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.KeyTips = "D";
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "Đăng Ký";
+            // 
             // FormSV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -601,11 +601,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.GwDKMonhoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
-            this.superTabControlPanel2.ResumeLayout(false);
-            this.superTabControlPanel3.ResumeLayout(false);
-            this.superTabControlPanel4.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
+            this.superTabControlPanel4.ResumeLayout(false);
+            this.superTabControlPanel3.ResumeLayout(false);
+            this.superTabControlPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

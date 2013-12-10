@@ -109,6 +109,7 @@ namespace QLHPHP
             BtnThem.Show();
             DSMHKhongThuocNganh.DataSource = nganh.MonHocKhongThuocNganh();
             btnXemMonCuaNganh.Show();
+            Xoa.Hide();
             lBdgv.Text = "Môn Học Không Thuộc Ngành";
         }
 
@@ -174,11 +175,11 @@ namespace QLHPHP
                     DSMHKhongThuocNganh.Hide();
                     BtnThem.Hide();
                     dgvXemDSMon.DataSource = nganh.MonHocCuaNganh();
-                    
                     lBdgv.Text = "Môn Học Thuộc Ngành";
                     reset();
                     btnXemMonCuaNganh.Show();
                     btnXemMonCuaNganh.Hide();
+                    Xoa.Show();
                     ToastNotification.Show(this, "Thêm Thành Công !");
                 }
                 catch (Exception)
@@ -201,6 +202,50 @@ namespace QLHPHP
             lBdgv.Text = "Môn Học Thuộc Ngành";
             reset();
             btnXemMonCuaNganh.Hide();
+            Xoa.Show();
         }
+
+        private void dgvXemDSMon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                txtMaMon.Text = dgvXemDSMon.CurrentRow.Cells[0].Value.ToString();
+
+            }
+            catch (Exception)
+            {
+
+
+            }
+        }
+
+        private void Xoa_Click(object sender, EventArgs e)
+        {
+            if (txtMaMon.Text.Trim() == "")
+            {
+                ToastNotification.Show(this, "Chưa nhập Mã Môn cần xóa !");
+            }
+            else
+            {
+                try
+                {
+                    monhoc.Mamonhoc = txtMaMon.Text.Trim();
+                    monhoc.Manganh = cbbNganh.SelectedValue.ToString();
+                    monhoc.XoaMonRaKhoiNganh();
+                    ToastNotification.Show(this, "Thành Công !");
+                    dgvXemDSMon.DataSource = nganh.MonHocCuaNganh();
+                    reset();
+                }
+                catch (Exception)
+                {
+                    ToastNotification.Show(this, "Thất Bại !");
+
+                }
+            }
+           
+
+        }
+
+
     }
 }

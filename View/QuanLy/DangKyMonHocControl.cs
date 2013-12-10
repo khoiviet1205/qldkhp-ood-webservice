@@ -108,8 +108,23 @@ namespace QLHPHP
 
 
         }
+        private void Huy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                phieudk.XoaBangMaMon();
+                ToastNotification.Show(this, "Đã xóa thành công!");
+                SoLuongDKMonHoc.DataSource = monhoc.SinhVienDKMonHoc();
+                TongTCSinhVien.DataSource = sv.TongTcSinhVien();
+            }
+            catch (Exception)
+            {
 
-        private void SoLuongDKMonHoc_Click(object sender, EventArgs e)
+                ToastNotification.Show(this, "Thất Bại!");
+            }
+        }
+
+        private void SoLuongDKMonHoc_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -119,22 +134,6 @@ namespace QLHPHP
             {
 
 
-            }
-
-        }
-
-        private void Huy_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                phieudk.XoaBangMaMon();
-                ToastNotification.Show(this, "Đã xóa thành công!");
-                SoLuongDKMonHoc.DataSource = monhoc.SinhVienDKMonHoc();
-            }
-            catch (Exception)
-            {
-
-                ToastNotification.Show(this, "Thất Bại!");
             }
         }
 

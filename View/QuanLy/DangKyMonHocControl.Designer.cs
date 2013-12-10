@@ -36,18 +36,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonDong = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.Huy = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.TongTCSinhVien = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Huy = new DevComponents.DotNetBar.ButtonX();
             this.SoLuongDKMonHoc = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
-            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TongTCSinhVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SoLuongDKMonHoc)).BeginInit();
@@ -109,17 +109,16 @@
             this.groupPanel1.Text = "Danh Sách Sinh Viên Đăng Ký Học Phần";
             this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
             // 
-            // Huy
+            // buttonX1
             // 
-            this.Huy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.Huy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.Huy.Location = new System.Drawing.Point(322, 173);
-            this.Huy.Name = "Huy";
-            this.Huy.Size = new System.Drawing.Size(75, 23);
-            this.Huy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.Huy.TabIndex = 5;
-            this.Huy.Text = "Hủy Môn";
-            this.Huy.Click += new System.EventHandler(this.Huy_Click);
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Location = new System.Drawing.Point(6, 380);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(393, 23);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 5;
+            this.buttonX1.Text = "Xem danh sách sinh viên đăng ký sai qui định >>>";
             // 
             // TongTCSinhVien
             // 
@@ -150,6 +149,7 @@
             this.TongTCSinhVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.TongTCSinhVien.Location = new System.Drawing.Point(6, 17);
             this.TongTCSinhVien.Name = "TongTCSinhVien";
+            this.TongTCSinhVien.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -166,12 +166,14 @@
             this.MSSV.DataPropertyName = "MSSV";
             this.MSSV.HeaderText = "MSSV";
             this.MSSV.Name = "MSSV";
+            this.MSSV.ReadOnly = true;
             // 
             // HoTen
             // 
             this.HoTen.DataPropertyName = "Hoten";
             this.HoTen.HeaderText = "Họ Tên";
             this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
             this.HoTen.Width = 150;
             // 
             // TongTC
@@ -179,6 +181,19 @@
             this.TongTC.DataPropertyName = "Tong";
             this.TongTC.HeaderText = "Tổng TC";
             this.TongTC.Name = "TongTC";
+            this.TongTC.ReadOnly = true;
+            // 
+            // Huy
+            // 
+            this.Huy.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.Huy.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.Huy.Location = new System.Drawing.Point(322, 173);
+            this.Huy.Name = "Huy";
+            this.Huy.Size = new System.Drawing.Size(75, 23);
+            this.Huy.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.Huy.TabIndex = 5;
+            this.Huy.Text = "Hủy Môn";
+            this.Huy.Click += new System.EventHandler(this.Huy_Click);
             // 
             // SoLuongDKMonHoc
             // 
@@ -209,6 +224,7 @@
             this.SoLuongDKMonHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.SoLuongDKMonHoc.Location = new System.Drawing.Point(3, 17);
             this.SoLuongDKMonHoc.Name = "SoLuongDKMonHoc";
+            this.SoLuongDKMonHoc.ReadOnly = true;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -219,6 +235,30 @@
             this.SoLuongDKMonHoc.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.SoLuongDKMonHoc.Size = new System.Drawing.Size(394, 150);
             this.SoLuongDKMonHoc.TabIndex = 3;
+            this.SoLuongDKMonHoc.Click += new System.EventHandler(this.SoLuongDKMonHoc_Click_1);
+            // 
+            // MaMon
+            // 
+            this.MaMon.DataPropertyName = "MaMon";
+            this.MaMon.HeaderText = "Mã Môn";
+            this.MaMon.Name = "MaMon";
+            this.MaMon.ReadOnly = true;
+            this.MaMon.Width = 80;
+            // 
+            // TenMonHoc
+            // 
+            this.TenMonHoc.DataPropertyName = "TenMonHoc";
+            this.TenMonHoc.HeaderText = "Tên Môn";
+            this.TenMonHoc.Name = "TenMonHoc";
+            this.TenMonHoc.ReadOnly = true;
+            this.TenMonHoc.Width = 170;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
             // 
             // panelEx1
             // 
@@ -278,37 +318,6 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 8;
             this.groupPanel2.Text = "Tình trạng môn học được đăng ký";
-            // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(6, 380);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(393, 23);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 5;
-            this.buttonX1.Text = "Xem danh sách sinh viên đăng ký sai qui định >>>";
-            // 
-            // MaMon
-            // 
-            this.MaMon.DataPropertyName = "MaMon";
-            this.MaMon.HeaderText = "Mã Môn";
-            this.MaMon.Name = "MaMon";
-            this.MaMon.Width = 80;
-            // 
-            // TenMonHoc
-            // 
-            this.TenMonHoc.DataPropertyName = "TenMonHoc";
-            this.TenMonHoc.HeaderText = "Tên Môn";
-            this.TenMonHoc.Name = "TenMonHoc";
-            this.TenMonHoc.Width = 170;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
             // 
             // DangKyMonHocControl
             // 

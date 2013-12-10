@@ -178,12 +178,6 @@ namespace QLHPHP
             buttonThemKhoa.Command = _Commands.ThemKhoaCommands.New;
         }
 
-        private void dgvNganh_Click(object sender, EventArgs e)
-        {
-            MaNganhStatic = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString() ;
-        }
-
-
         private void buttonXoaKhoa_Click_1(object sender, EventArgs e)
         {
             khoa.MaKhoa = dgvKhoa.CurrentRow.Cells[0].Value.ToString();
@@ -255,6 +249,21 @@ namespace QLHPHP
         private void btnChiTietNganh_Click_1(object sender, EventArgs e)
         {
             btnChiTietNganh.Command = _Commands.ChiTietNganhCommands.New;
+        }
+
+        private void dgvNganh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MaNganhStatic = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString();
+            }
+            catch (Exception)
+            {
+                
+               
+            }
+          
+            
         }
 
 

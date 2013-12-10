@@ -337,3 +337,34 @@ D:\GiaoDienOOD\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
 D:\GiaoDienOOD\obj\Debug\QLHPHP.exe
 D:\GiaoDienOOD\obj\Debug\QLHPHP.pdb
 D:\GiaoDienOOD\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+F:\Ngoc Duong\GiaoDien_ODD\bin\Debug\QLHPHP.exe.config
+F:\Ngoc Duong\GiaoDien_ODD\bin\Debug\QLHPHP.exe
+F:\Ngoc Duong\GiaoDien_ODD\bin\Debug\QLHPHP.pdb
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.View.FormMain.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.AboutControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.DanhSachSVControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.View.FormSV.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.HocPhiControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.KhoaNganhControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.FormQL.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.Properties.Resources.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.QuyDinhControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.ReportControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.StartControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.ThemKhoaControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.ThemNganhControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.TimKiemControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.TroGiupControl.resources
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.exe
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.pdb
+F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
