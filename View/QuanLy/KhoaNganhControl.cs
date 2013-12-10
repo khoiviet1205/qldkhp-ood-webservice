@@ -173,14 +173,56 @@ namespace QLHPHP
 
         }
 
+<<<<<<< .mine
+        private void buttonThemKhoa_Click_1(object sender, EventArgs e)
+        {
+            buttonThemKhoa.Command = _Commands.ThemKhoaCommands.New;
+        }
+=======
         private void dgvNganh_Click(object sender, EventArgs e)
         {
             MaNganhStatic = dgvNganh.CurrentRow.Cells["MaNganh"].Value.ToString() ;
+        }
+>>>>>>> .r9
+
+        private void buttonXoaKhoa_Click_1(object sender, EventArgs e)
+        {
+            khoa.MaKhoa = dgvKhoa.CurrentRow.Cells[0].Value.ToString();
+            string name = dgvKhoa.CurrentRow.Cells[1].Value.ToString();
+            if (khoa.MaKhoa != "")
+            {
+                try
+                {
+                    khoa.Xoa();
+                    LoadListKhoa();
+                    ToastNotification.Show(this, "Đã xóa khoa " + name + " thành công");
+
+                }
+                catch
+                {
+                    ToastNotification.Show(this, "Lỗi!");
+
+                }
+            }
+            else
+            {
+                ToastNotification.Show(this, "Vui lòng chọn Khoa để xóa!");
+
+<<<<<<< .mine
+            }
+        }
+
+        private void buttonLamMoiKhoa_Click_1(object sender, EventArgs e)
+        {
+            LoadListKhoa();
         }
 
 
 
 
 
+=======
+
+>>>>>>> .r9
     }
 }

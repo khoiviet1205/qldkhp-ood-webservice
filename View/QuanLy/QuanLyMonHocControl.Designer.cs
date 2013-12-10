@@ -60,12 +60,12 @@
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.dgvDSMonHoc = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.buttonDong = new DevComponents.DotNetBar.ButtonX();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTCLT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTCTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonDong = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1.SuspendLayout();
             this.groupPanel4.SuspendLayout();
             this.groupPanel3.SuspendLayout();
@@ -176,7 +176,7 @@
             this.groupPanel3.Controls.Add(this.dgvDSNganh);
             this.groupPanel3.Location = new System.Drawing.Point(550, 13);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(296, 385);
+            this.groupPanel3.Size = new System.Drawing.Size(281, 385);
             // 
             // 
             // 
@@ -302,7 +302,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDSNganh.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDSNganh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvDSNganh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dgvDSNganh.Location = new System.Drawing.Point(3, 99);
             this.dgvDSNganh.Name = "dgvDSNganh";
             this.dgvDSNganh.Size = new System.Drawing.Size(281, 260);
@@ -601,24 +601,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvDSMonHoc.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvDSMonHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dgvDSMonHoc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dgvDSMonHoc.Location = new System.Drawing.Point(13, 13);
             this.dgvDSMonHoc.Name = "dgvDSMonHoc";
             this.dgvDSMonHoc.Size = new System.Drawing.Size(240, 385);
             this.dgvDSMonHoc.TabIndex = 22;
             this.dgvDSMonHoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSMonHoc_CellClick);
-            // 
-            // buttonDong
-            // 
-            this.buttonDong.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonDong.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonDong.Location = new System.Drawing.Point(767, 405);
-            this.buttonDong.Name = "buttonDong";
-            this.buttonDong.Size = new System.Drawing.Size(64, 28);
-            this.buttonDong.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonDong.Symbol = "";
-            this.buttonDong.TabIndex = 10;
-            this.buttonDong.Tooltip = "Quay lại màn hình chính";
             // 
             // MaMon
             // 
@@ -654,6 +642,18 @@
             this.TongTC.HeaderText = "Tổng TC";
             this.TongTC.Name = "TongTC";
             this.TongTC.Width = 50;
+            // 
+            // buttonDong
+            // 
+            this.buttonDong.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonDong.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonDong.Location = new System.Drawing.Point(767, 405);
+            this.buttonDong.Name = "buttonDong";
+            this.buttonDong.Size = new System.Drawing.Size(64, 28);
+            this.buttonDong.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonDong.Symbol = "";
+            this.buttonDong.TabIndex = 10;
+            this.buttonDong.Tooltip = "Quay lại màn hình chính";
             // 
             // QuanLyMonHocControl
             // 
