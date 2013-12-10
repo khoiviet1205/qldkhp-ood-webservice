@@ -1,0 +1,277 @@
+D:\MetroBill_Danglam\C#\bin\Debug\MetroBill.exe
+D:\MetroBill_Danglam\C#\bin\Debug\MetroBill.pdb
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.ClientControl.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.NhapSinhVien.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.MainForm.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.Properties.Resources.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.StartControl.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.StartupForm.resources
+D:\MetroBill_Danglam\C#\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.exe
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.pdb
+D:\MetroBill_Danglam\C#\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.MainForm.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.Properties.Resources.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.StartControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.StartupForm.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.KhoaNganhControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\MetroBill.exe
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\MetroBill.pdb
+D:\PTTK_Danglam - Danglam\C#\bin\Debug\MetroBill.exe
+D:\PTTK_Danglam - Danglam\C#\bin\Debug\MetroBill.pdb
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.KhoaNganhControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.MainForm.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.Properties.Resources.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.StartControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.StartupForm.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.DanhSachSVControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+D:\PTTK_Danglam - Danglam\C#\obj\Debug\QLHPHP.ThemKhoaControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.DanhSachSVControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.ThemKhoaControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.ThemNganhControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.QuyDinhControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.FormDangNhap.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\MetroBill.exe
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\MetroBill.pdb
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\bin\Debug\MetroBill.exe
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\bin\Debug\MetroBill.pdb
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.DanhSachSVControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.FormDangNhap.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.KhoaNganhControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.MainForm.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.Properties.Resources.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.QuyDinhControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.StartControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.StartupForm.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.ThemKhoaControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.ThemNganhControl.resources
+D:\PTTK_Danglam - Backup 15h03 -9-6-2013\C#\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.TimKiemControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.HocPhiControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.AboutControl.resources
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.ReportControl.resources
+D:\PTTK_Danglam\C#\bin\Debug\QLHPHP.exe.config
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.exe
+D:\PTTK_Danglam\C#\bin\Debug\QLHPHP.exe
+D:\PTTK_Danglam\C#\bin\Debug\QLHPHP.pdb
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.pdb
+D:\PTTK_Danglam\C#\obj\Debug\RdlCompile.cache
+D:\PTTK_Danglam\C#\obj\Debug\RdlCompile.compiled
+D:\PTTK_Danglam\C#\obj\Debug\QLHPHP.TroGiupControl.resources
+D:\PTTK_Full\C#\bin\Debug\QLHPHP.exe.config
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.exe
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.pdb
+D:\PTTK_Full\C#\bin\Debug\QLHPHP.exe
+D:\PTTK_Full\C#\bin\Debug\QLHPHP.pdb
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.AboutControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.DanhSachSVControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.FormDangNhap.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.HocPhiControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.KhoaNganhControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.MainForm.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.Properties.Resources.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.QuyDinhControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.ReportControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.StartControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.StartupForm.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.ThemKhoaControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.ThemNganhControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.TimKiemControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.TroGiupControl.resources
+D:\PTTK_Full\C#\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\PTTK_Full\C#\obj\Debug\RdlCompile.cache
+D:\PTTK_Full\C#\obj\Debug\RdlCompile.compiled
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\bin\Debug\QLHPHP.exe.config
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.exe
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.pdb
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\bin\Debug\QLHPHP.exe
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\bin\Debug\QLHPHP.pdb
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.AboutControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.DanhSachSVControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.FormDangNhap.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.HocPhiControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.KhoaNganhControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.MainForm.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.Properties.Resources.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.QuyDinhControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.ReportControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.StartControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.StartupForm.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.ThemKhoaControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.ThemNganhControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.TimKiemControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.TroGiupControl.resources
+C:\Users\KHOIVIET\Dropbox\PTTK_Full\PTTK_Full\C#\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\QLDKHP\bin\Debug\QLHPHP.exe.config
+D:\QLDKHP\obj\Debug\QLHPHP.exe
+D:\QLDKHP\obj\Debug\QLHPHP.pdb
+D:\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe.config
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.exe
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.pdb
+D:\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe
+D:\QLDKHP\qldkhp\bin\Debug\QLHPHP.pdb
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.AboutControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.DanhSachSVControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.HocPhiControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.KhoaNganhControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.Properties.Resources.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.QuyDinhControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.ReportControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.StartControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.ThemKhoaControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.ThemNganhControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.TimKiemControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.TroGiupControl.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+E:\Source\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe.config
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.exe
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.pdb
+E:\Source\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe
+E:\Source\QLDKHP\qldkhp\bin\Debug\QLHPHP.pdb
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.AboutControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.DanhSachSVControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.FormDangNhap.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.HocPhiControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.KhoaNganhControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.MainForm.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.Properties.Resources.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.QuyDinhControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.ReportControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.StartControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.StartupForm.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.ThemKhoaControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.ThemNganhControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.TimKiemControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.TroGiupControl.resources
+E:\Source\QLDKHP\qldkhp\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.View.FormSV.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.FormQL.resources
+D:\QLDKHP\qldkhp\obj\Debug\QLHPHP.View.FormMain.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe.config
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.exe
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.pdb
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\bin\Debug\QLHPHP.pdb
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.View.FormMain.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.AboutControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.DanhSachSVControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.View.FormSV.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.HocPhiControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.KhoaNganhControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.FormQL.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.Properties.Resources.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.QuyDinhControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.ReportControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.StartControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.ThemKhoaControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.ThemNganhControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.TimKiemControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.TroGiupControl.resources
+F:\Ngoc Duong\ODD\QLDKHP\qldkhp\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+F:\Ngoc Duong\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe.config
+F:\Ngoc Duong\QLDKHP\qldkhp\obj\Debug\QLHPHP.exe
+F:\Ngoc Duong\QLDKHP\qldkhp\obj\Debug\QLHPHP.pdb
+C:\Users\CONG\Desktop\QLDKHP\qldkhp\bin\Debug\QLHPHP.exe.config
+C:\Users\CONG\Desktop\QLDKHP\qldkhp\obj\Debug\QLHPHP.exe
+C:\Users\CONG\Desktop\QLDKHP\qldkhp\obj\Debug\QLHPHP.pdb
+F:\Ngoc Duong\QLDKHP\Do an\bin\Debug\QLHPHP.exe.config
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.exe
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.pdb
+F:\Ngoc Duong\QLDKHP\Do an\bin\Debug\QLHPHP.exe
+F:\Ngoc Duong\QLDKHP\Do an\bin\Debug\QLHPHP.pdb
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.View.FormMain.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.AboutControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ChiTietDangKyControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ChiTietNganhControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.DangKyMonHocControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.DanhSachSVControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.DSDaDongHocPhiControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.View.FormSV.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.HocPhiControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.KhoaNganhControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.LapPhieuThuControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.MonHocTichLuyControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.NhapSinhVienControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.FormQL.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.Properties.Resources.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.QuanLyMonHocControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.QuyDinhControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ReportControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.StartControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ThemKhoaControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ThemNganhControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.TimKiemControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.TroGiupControl.resources
+F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.csproj.GenerateResource.Cache

@@ -1,0 +1,36 @@
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\bin\Debug\MetroBill.exe
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\bin\Debug\MetroBill.pdb
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.csprojResolveAssemblyReference.cache
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.ClientControl.resources
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.InvoiceControl.resources
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.MainForm.resources
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.Properties.Resources.resources
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.StartControl.resources
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.StartupForm.resources
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.csproj.GenerateResource.Cache
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.exe
+C:\Users\LYNHUTRAU\Documents\DotNetBar WinForms Samples\MetroBill\C#\obj\Debug\MetroBill.pdb
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.exe
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.pdb
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\bin\Debug\MetroBill.exe
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\bin\Debug\MetroBill.pdb
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.csprojResolveAssemblyReference.cache
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.ClientControl.resources
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.InvoiceControl.resources
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.MainForm.resources
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.Properties.Resources.resources
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.StartControl.resources
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.StartupForm.resources
+C:\Users\LYNHUTRAU\Desktop\MetroBill\C#\obj\Debug\MetroBill.csproj.GenerateResource.Cache
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.exe
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.pdb
+D:\MetroBill_Danglam\C#\bin\Debug\MetroBill.exe
+D:\MetroBill_Danglam\C#\bin\Debug\MetroBill.pdb
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.csprojResolveAssemblyReference.cache
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.ClientControl.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.NhapSinhVien.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.MainForm.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.Properties.Resources.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.StartControl.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.StartupForm.resources
+D:\MetroBill_Danglam\C#\obj\Debug\MetroBill.csproj.GenerateResource.Cache

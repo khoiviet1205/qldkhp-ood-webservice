@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{291BF54E-7781-4F1E-84D2-A627A3322490}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLHPHP</RootNamespace>
+    <AssemblyName>QLHPHP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.1.0.5, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=9.9.9.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.1.0.5, Culture=neutral, PublicKeyToken=f90dc37c26666a67, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\DoiTuong.cs" />
+    <Compile Include="Class\FormQL.cs" />
+    <Compile Include="Class\Khoa.cs" />
+    <Compile Include="Class\MonHoc.cs" />
+    <Compile Include="Class\Nganh.cs" />
+    <Compile Include="Class\PhieuDangKi.cs" />
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Class\QuanLy.cs" />
+    <Compile Include="Class\SinhVien.cs" />
+    <Compile Include="Class\TaiKhoan.cs" />
+    <Compile Include="Service References\Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\AboutControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\AboutControl.Designer.cs">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\CapNhapThongTinControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\CapNhapThongTinControl.Designer.cs">
+      <DependentUpon>CapNhapThongTinControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\ChiTietDangKyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\ChiTietDangKyControl.Designer.cs">
+      <DependentUpon>ChiTietDangKyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\ChiTietNganhControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\ChiTietNganhControl.Designer.cs">
+      <DependentUpon>ChiTietNganhControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\DangKyMonHocControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\DangKyMonHocControl.Designer.cs">
+      <DependentUpon>DangKyMonHocControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\DanhSachSVControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\DanhSachSVControl.Designer.cs">
+      <DependentUpon>DanhSachSVControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\DSDaDongHocPhiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\DSDaDongHocPhiControl.Designer.cs">
+      <DependentUpon>DSDaDongHocPhiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SinhVien\FormSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SinhVien\FormSV.Designer.cs">
+      <DependentUpon>FormSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\HocPhiControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\HocPhiControl.Designer.cs">
+      <DependentUpon>HocPhiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\LapPhieuThuControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\LapPhieuThuControl.Designer.cs">
+      <DependentUpon>LapPhieuThuControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\MonHocTichLuyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\MonHocTichLuyControl.Designer.cs">
+      <DependentUpon>MonHocTichLuyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\KhoaNganhControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\KhoaNganhControl.Designer.cs">
+      <DependentUpon>KhoaNganhControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\NhapSinhVienControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\NhapSinhVienControl.Designer.cs">
+      <DependentUpon>NhapSinhVienControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\FormQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\FormQL.Designer.cs">
+      <DependentUpon>FormQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\AppCommands.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\QuanLyMonHocControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\QuanLyMonHocControl.Designer.cs">
+      <DependentUpon>QuanLyMonHocControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\QuyDinhControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\QuyDinhControl.Designer.cs">
+      <DependentUpon>QuyDinhControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\ReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\ReportControl.Designer.cs">
+      <DependentUpon>ReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\StartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\StartControl.Designer.cs">
+      <DependentUpon>StartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\QuanLy\ThemKhoaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\ThemKhoaControl.Designer.cs">
+      <DependentUpon>ThemKhoaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\ThemNganhControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\ThemNganhControl.Designer.cs">
+      <DependentUpon>ThemNganhControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\TimKiemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\TimKiemControl.Designer.cs">
+      <DependentUpon>TimKiemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuanLy\TroGiupControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\QuanLy\TroGiupControl.Designer.cs">
+      <DependentUpon>TroGiupControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\AboutControl.resx">
+      <DependentUpon>AboutControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\CapNhapThongTinControl.resx">
+      <DependentUpon>CapNhapThongTinControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\ChiTietDangKyControl.resx">
+      <DependentUpon>ChiTietDangKyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\ChiTietNganhControl.resx">
+      <DependentUpon>ChiTietNganhControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\DangKyMonHocControl.resx">
+      <DependentUpon>DangKyMonHocControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\DanhSachSVControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DanhSachSVControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\DSDaDongHocPhiControl.resx">
+      <DependentUpon>DSDaDongHocPhiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SinhVien\FormSV.resx">
+      <DependentUpon>FormSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\HocPhiControl.resx">
+      <DependentUpon>HocPhiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\KhoaNganhControl.resx">
+      <DependentUpon>KhoaNganhControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\LapPhieuThuControl.resx">
+      <DependentUpon>LapPhieuThuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\MonHocTichLuyControl.resx">
+      <DependentUpon>MonHocTichLuyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\NhapSinhVienControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NhapSinhVienControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\FormQL.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\QuanLyMonHocControl.resx">
+      <DependentUpon>QuanLyMonHocControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\QuyDinhControl.resx">
+      <DependentUpon>QuyDinhControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\ReportControl.resx">
+      <DependentUpon>ReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\StartControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StartControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\ThemKhoaControl.resx">
+      <DependentUpon>ThemKhoaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\ThemNganhControl.resx">
+      <DependentUpon>ThemNganhControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\TimKiemControl.resx">
+      <DependentUpon>TimKiemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\QuanLy\TroGiupControl.resx">
+      <DependentUpon>TroGiupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\Service\QL.wsdl" />
+    <None Include="View\QuanLy\app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewInvoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableSelectRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorScheme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unpaid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableReportt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewInvoice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewInvoiceWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkAsPaid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarkAsPaidWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookNoteWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaperClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaperClipWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserWhite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableWhite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Update_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messanger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header_img_1393.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_-_Product_Features_-_Alumni_Briefcase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1371827925_user5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\QL.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
