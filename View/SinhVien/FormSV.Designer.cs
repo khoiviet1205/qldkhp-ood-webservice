@@ -30,13 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.GwDKMonhoc = new System.Windows.Forms.DataGridView();
-            this.MaMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoTCLT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoTCTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chon = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.txtDangKi = new DevComponents.DotNetBar.ButtonX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
             this.lbNganh = new DevComponents.DotNetBar.LabelX();
@@ -62,18 +61,20 @@
             this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.txtDangKi = new DevComponents.DotNetBar.ButtonX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
+            this.MaMonHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoToiDa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chon = new DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GwDKMonhoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
             this.panelEx1.SuspendLayout();
             this.superTabControlPanel4.SuspendLayout();
             this.superTabControlPanel3.SuspendLayout();
-            this.superTabControlPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // GwDKMonhoc
@@ -82,49 +83,15 @@
             this.GwDKMonhoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaMonHoc,
             this.TenMon,
-            this.SoTCLT,
-            this.SoTCTH,
-            this.chon});
+            this.TongTC,
+            this.SoLuongDK,
+            this.SoToiDa,
+            this.Chon});
             this.GwDKMonhoc.Location = new System.Drawing.Point(15, 50);
             this.GwDKMonhoc.Name = "GwDKMonhoc";
-            this.GwDKMonhoc.Size = new System.Drawing.Size(594, 300);
+            this.GwDKMonhoc.Size = new System.Drawing.Size(594, 307);
             this.GwDKMonhoc.TabIndex = 0;
             this.GwDKMonhoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // MaMonHoc
-            // 
-            this.MaMonHoc.DataPropertyName = "MaMon";
-            this.MaMonHoc.HeaderText = "Mã Môn";
-            this.MaMonHoc.Name = "MaMonHoc";
-            this.MaMonHoc.Width = 80;
-            // 
-            // TenMon
-            // 
-            this.TenMon.DataPropertyName = "TenMonHoc";
-            this.TenMon.HeaderText = "Tên Môn";
-            this.TenMon.Name = "TenMon";
-            this.TenMon.Width = 240;
-            // 
-            // SoTCLT
-            // 
-            this.SoTCLT.DataPropertyName = "SoTCLT";
-            this.SoTCLT.HeaderText = "Số TCLT";
-            this.SoTCLT.Name = "SoTCLT";
-            this.SoTCLT.Width = 70;
-            // 
-            // SoTCTH
-            // 
-            this.SoTCTH.DataPropertyName = "SoTCTH";
-            this.SoTCTH.HeaderText = "Số TCTH";
-            this.SoTCTH.Name = "SoTCTH";
-            this.SoTCTH.Width = 90;
-            // 
-            // chon
-            // 
-            this.chon.HeaderText = "Đăng kí";
-            this.chon.Name = "chon";
-            this.chon.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.chon.Width = 70;
             // 
             // styleManager1
             // 
@@ -153,10 +120,10 @@
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
             this.superTabControl1.ControlBox.Visible = false;
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel4);
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.ForeColor = System.Drawing.Color.Black;
             this.superTabControl1.ItemPadding.Left = 6;
             this.superTabControl1.ItemPadding.Right = 4;
@@ -177,6 +144,59 @@
             this.superTabItem3,
             this.superTabItem4});
             this.superTabControl1.TabVerticalSpacing = 8;
+            // 
+            // superTabControlPanel2
+            // 
+            this.superTabControlPanel2.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
+            this.superTabControlPanel2.Controls.Add(this.txtDangKi);
+            this.superTabControlPanel2.Controls.Add(this.labelX3);
+            this.superTabControlPanel2.Controls.Add(this.GwDKMonhoc);
+            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel2.Location = new System.Drawing.Point(111, 0);
+            this.superTabControlPanel2.Name = "superTabControlPanel2";
+            this.superTabControlPanel2.Padding = new System.Windows.Forms.Padding(12);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(618, 394);
+            this.superTabControlPanel2.TabIndex = 2;
+            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            // 
+            // txtDangKi
+            // 
+            this.txtDangKi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.txtDangKi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.txtDangKi.Location = new System.Drawing.Point(240, 363);
+            this.txtDangKi.Name = "txtDangKi";
+            this.txtDangKi.Size = new System.Drawing.Size(75, 23);
+            this.txtDangKi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.txtDangKi.TabIndex = 2;
+            this.txtDangKi.Text = "Đăng kí";
+            this.txtDangKi.Click += new System.EventHandler(this.txtDangKi_Click);
+            // 
+            // labelX3
+            // 
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
+            this.labelX3.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
+            this.labelX3.BackgroundStyle.BorderBottomWidth = 1;
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelX3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.ForeColor = System.Drawing.Color.Black;
+            this.labelX3.Location = new System.Drawing.Point(12, 12);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(594, 23);
+            this.labelX3.TabIndex = 1;
+            this.labelX3.Text = "Đăng Ký Học Phần";
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.KeyTips = "D";
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "Đăng Ký";
             // 
             // superTabControlPanel1
             // 
@@ -532,58 +552,50 @@
             this.superTabItem3.Name = "superTabItem3";
             this.superTabItem3.Text = "Kết Quả";
             // 
-            // superTabControlPanel2
+            // MaMonHoc
             // 
-            this.superTabControlPanel2.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.BottomRight;
-            this.superTabControlPanel2.Controls.Add(this.txtDangKi);
-            this.superTabControlPanel2.Controls.Add(this.labelX3);
-            this.superTabControlPanel2.Controls.Add(this.GwDKMonhoc);
-            this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(111, 0);
-            this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Padding = new System.Windows.Forms.Padding(12);
-            this.superTabControlPanel2.Size = new System.Drawing.Size(618, 394);
-            this.superTabControlPanel2.TabIndex = 2;
-            this.superTabControlPanel2.TabItem = this.superTabItem2;
+            this.MaMonHoc.DataPropertyName = "MaMonHoc";
+            this.MaMonHoc.HeaderText = "Mã Môn";
+            this.MaMonHoc.Name = "MaMonHoc";
+            this.MaMonHoc.Width = 80;
             // 
-            // txtDangKi
+            // TenMon
             // 
-            this.txtDangKi.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.txtDangKi.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.txtDangKi.Location = new System.Drawing.Point(240, 363);
-            this.txtDangKi.Name = "txtDangKi";
-            this.txtDangKi.Size = new System.Drawing.Size(75, 23);
-            this.txtDangKi.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.txtDangKi.TabIndex = 2;
-            this.txtDangKi.Text = "Đăng kí";
-            this.txtDangKi.Click += new System.EventHandler(this.txtDangKi_Click);
+            this.TenMon.DataPropertyName = "TenMonHoc";
+            this.TenMon.HeaderText = "Tên Môn";
+            this.TenMon.Name = "TenMon";
+            this.TenMon.Width = 200;
             // 
-            // labelX3
+            // TongTC
             // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            this.TongTC.DataPropertyName = "TongTC";
+            this.TongTC.HeaderText = "Tổng TC";
+            this.TongTC.Name = "TongTC";
+            this.TongTC.Width = 70;
             // 
+            // SoLuongDK
             // 
+            this.SoLuongDK.DataPropertyName = "SoLuongDK";
+            this.SoLuongDK.HeaderText = "Đã Đăng Ký";
+            this.SoLuongDK.Name = "SoLuongDK";
+            this.SoLuongDK.Width = 70;
             // 
-            this.labelX3.BackgroundStyle.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Dash;
-            this.labelX3.BackgroundStyle.BorderBottomColor = System.Drawing.Color.Gray;
-            this.labelX3.BackgroundStyle.BorderBottomWidth = 1;
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelX3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(12, 12);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(594, 23);
-            this.labelX3.TabIndex = 1;
-            this.labelX3.Text = "Đăng Ký Học Phần";
+            // SoToiDa
             // 
-            // superTabItem2
+            this.SoToiDa.DataPropertyName = "SoSVToiDa";
+            this.SoToiDa.HeaderText = "Tối Đa";
+            this.SoToiDa.Name = "SoToiDa";
+            this.SoToiDa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.SoToiDa.Width = 70;
             // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel2;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.KeyTips = "D";
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "Đăng Ký";
+            // Chon
+            // 
+            this.Chon.Checked = true;
+            this.Chon.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.Chon.CheckValue = null;
+            this.Chon.HeaderText = "Đăng Kí";
+            this.Chon.Name = "Chon";
+            this.Chon.Width = 70;
             // 
             // FormSV
             // 
@@ -601,11 +613,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.GwDKMonhoc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
             this.panelEx1.ResumeLayout(false);
             this.superTabControlPanel4.ResumeLayout(false);
             this.superTabControlPanel3.ResumeLayout(false);
-            this.superTabControlPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -646,9 +658,10 @@
         private DevComponents.DotNetBar.ButtonX txtDangKi;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMonHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoTCLT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoTCTH;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn chon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TongTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongDK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoToiDa;
+        private DevComponents.DotNetBar.Controls.DataGridViewCheckBoxXColumn Chon;
 
 
     }

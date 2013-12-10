@@ -367,4 +367,3 @@ F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.TroGiupControl.resources
 F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
 F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.exe
 F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.pdb
-F:\Ngoc Duong\GiaoDien_ODD\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
