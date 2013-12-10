@@ -275,9 +275,6 @@ F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ThemNganhControl.resources
 F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.TimKiemControl.resources
 F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.TroGiupControl.resources
 F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
-D:\GiaoDienOOD\bin\Debug\QLHPHP.exe.config
-D:\GiaoDienOOD\obj\Debug\QLHPHP.exe
-D:\GiaoDienOOD\obj\Debug\QLHPHP.pdb
 F:\Ngoc Duong\GiaoDien\bin\Debug\QLHPHP.exe.config
 F:\Ngoc Duong\GiaoDien\bin\Debug\QLHPHP.exe
 F:\Ngoc Duong\GiaoDien\bin\Debug\QLHPHP.pdb
@@ -306,13 +303,12 @@ F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.ThemNganhControl.resources
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.TimKiemControl.resources
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.TroGiupControl.resources
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
-<<<<<<< .mine
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.exe
 F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.pdb
-=======
+F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\GiaoDienOOD\bin\Debug\QLHPHP.exe.config
 D:\GiaoDienOOD\bin\Debug\QLHPHP.exe
 D:\GiaoDienOOD\bin\Debug\QLHPHP.pdb
-D:\GiaoDienOOD\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
 D:\GiaoDienOOD\obj\Debug\QLHPHP.View.FormMain.resources
 D:\GiaoDienOOD\obj\Debug\QLHPHP.AboutControl.resources
 D:\GiaoDienOOD\obj\Debug\QLHPHP.CapNhapThongTinControl.resources
@@ -338,5 +334,6 @@ D:\GiaoDienOOD\obj\Debug\QLHPHP.ThemNganhControl.resources
 D:\GiaoDienOOD\obj\Debug\QLHPHP.TimKiemControl.resources
 D:\GiaoDienOOD\obj\Debug\QLHPHP.TroGiupControl.resources
 D:\GiaoDienOOD\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
->>>>>>> .r5
-F:\Ngoc Duong\GiaoDien\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
+D:\GiaoDienOOD\obj\Debug\QLHPHP.exe
+D:\GiaoDienOOD\obj\Debug\QLHPHP.pdb
+D:\GiaoDienOOD\obj\Debug\QLHPHP.csprojResolveAssemblyReference.cache
