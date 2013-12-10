@@ -275,3 +275,6 @@ F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.ThemNganhControl.resources
 F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.TimKiemControl.resources
 F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.TroGiupControl.resources
 F:\Ngoc Duong\QLDKHP\Do an\obj\Debug\QLHPHP.csproj.GenerateResource.Cache
+D:\GiaoDienOOD\bin\Debug\QLHPHP.exe.config
+D:\GiaoDienOOD\obj\Debug\QLHPHP.exe
+D:\GiaoDienOOD\obj\Debug\QLHPHP.pdb
